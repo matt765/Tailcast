@@ -1,0 +1,28 @@
+.custom-shape-divider-bottom-1665343298 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.custom-shape-divider-bottom-1665343298 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 120px;
+}
+.custom-shape-divider-bottom-1665343298 .shape-fill {
+  fill: #26272b;
+ 
+}
+.hero-title-gradient {
+  background: -webkit-linear-gradient(white, #b4add1);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+}
+.hero-bg-gradient {
+
+}
+.hero-button-gradient {
+  background: rgb(93,71,232);
+  background: linear-gradient(141deg, rgba(93,71,232,1) 63%, rgba(120,103,230,1) 100%); 
+}

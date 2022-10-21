@@ -1,0 +1,3 @@
+.navbar-link {
+  @apply dark:text-white text-black font-medium text-base leading-6 mr-6 ml-6 cursor-pointer font-medium;
+}

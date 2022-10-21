@@ -1,0 +1,38 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+import { Hero } from "../components/Hero.jsx";
+import { Navbar } from "../components/Navbar.jsx";
+import { Features1 } from "../components/Features1.jsx";
+import { Features2 } from "../components/Features2.jsx";
+import { Testimonials } from "../components/Testimonials.jsx";
+import { FeaturesDiagonal } from "../components/FeaturesDiagonal.jsx";
+import { Logos } from "../components/Logos.jsx";
+import { Pricing } from "../components/Pricing.jsx";
+import { FAQ } from "../components/FAQ.jsx";
+import { Brands } from "../components/Brands.jsx";
+import { Divider } from "../components/Divider";
+import { Footer } from "../components/Footer.jsx";
+import "../styles/Navbar.styles.css";
+import "../styles/Hero.styles.css";
+import "../styles/Utils.styles.css";
+import "../styles/Features2.styles.css";
+import "../styles/Bg.styles.css";
+
+
+---
+
+<Layout title="Welcome to Astro.">
+  <Navbar client:load />
+  <Hero />
+  <Features1 />
+  <Divider />
+  <Features2 />  
+  
+  <Testimonials />
+  <FeaturesDiagonal />
+  <Pricing />
+  <Brands />
+  <FAQ />
+  <Footer />
+</Layout>

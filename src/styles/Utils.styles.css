@@ -1,0 +1,24 @@
+.custom-block-title {
+  @apply dark:text-white text-3xl font-bold tracking-normal;
+}
+.custom-block-big-title {
+  @apply dark:text-white text-5xl font-bold tracking-normal;
+}
+.custom-block-subtitle {
+  @apply text-xs text-customSecondary  tracking-wider font-bold uppercase;
+}
+.custom-content-title {
+  @apply dark:text-white text-lg font-bold tracking-normal;
+}
+.custom-content-subtitle {
+  @apply dark:text-customContentSubtitle text-sm text-black tracking-normal;
+}
+.custom-content-container {
+  @apply border;
+}
+.custom-content-text-white {
+  @apply text-white text-base leading-relaxed
+}
+.custom-content-text-gray {
+  @apply text-gray-400 text-base
+}
