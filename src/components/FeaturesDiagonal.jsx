@@ -1,5 +1,4 @@
 import f1 from "../assets/images/f1.png";
-import CheckArrow, { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 import { LogoCloud } from "../assets/icons/LogoCloud";
 import { Logos } from "./Logos.jsx";
 import feature5 from "../assets/images/feature5.png";
