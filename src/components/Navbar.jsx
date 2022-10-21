@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { LogoIcon } from "../assets/icons/logoIcon";
+import { LogoIcon } from "../assets/icons/LogoIcon";
 
 export const Navbar = () => {
   const [isDarkModeEnabled, setIsDarkModeEnabled] = useState(true);
