@@ -4,14 +4,14 @@ import testimonial2 from "../assets/images/testimonial2.png";
 import testimonial3 from "../assets/images/testimonial3.png";
 
 export const Testimonials = () => (
-  <section className="w-full flex justify-center mt-10 mb-32">
+  <section className="w-full flex justify-center pt-10 mb-32 bg-customDarkBg2">
     <div className="flex flex-col w-3/5 justify-center">
       <div className="custom-block-subtitle text-center mb-6">Lorem Ipsum</div>
       <div className="custom-block-big-title text-center mb-16">
         People like you love
       </div>
       <div className="flex gap-10">
-        <div className="w-1/3 custom-border-gray rounded-xl bg-customDarkBg3 flex flex-col px-6 py-4">
+        <div className="w-1/3 custom-border-gray-darker rounded-xl bg-customDarkBg3 flex flex-col px-6 py-4">
           <div className="flex mb-2">
             <QuoteIcon />
           </div>
@@ -34,7 +34,7 @@ export const Testimonials = () => (
             </div>
           </div>
         </div>
-        <div className="w-1/3 custom-border-gray rounded-xl bg-customDarkBg3 flex flex-col px-6 py-4">
+        <div className="w-1/3 custom-border-gray-darker rounded-xl bg-customDarkBg3 flex flex-col px-6 py-4">
           <div className="flex mb-2">
             <QuoteIcon />
           </div>
@@ -57,7 +57,7 @@ export const Testimonials = () => (
             </div>
           </div>
         </div>
-        <div className="w-1/3 custom-border-gray rounded-xl bg-customDarkBg3 flex flex-col px-6 py-4">
+        <div className="w-1/3 custom-border-gray-darker rounded-xl bg-customDarkBg3 flex flex-col px-6 py-4">
           <div className="flex mb-2">
             <QuoteIcon />
           </div>

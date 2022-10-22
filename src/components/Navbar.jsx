@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
-import { LogoIcon } from "../assets/icons/LogoIcon";
+import { RaystreamsLogo } from "../assets/logos/RaystreamsLogo";
+import { GithubIcon } from "../assets/icons/GithubIcon";
 
 export const Navbar = () => {
   const [isDarkModeEnabled, setIsDarkModeEnabled] = useState(true);
@@ -28,7 +29,7 @@ export const Navbar = () => {
       <div className="w-8/12 flex justify-between items-center">
         <div className="flex justify-start items-center grow basis-0">
           <div className="dark:text-white mr-2 text-6xl">
-            <LogoIcon />
+            <RaystreamsLogo />
           </div>
           <div className="dark:text-white font-['Inter'] font-bold text-xl">
             Raystreams
@@ -42,7 +43,9 @@ export const Navbar = () => {
           <div className="navbar-link">Contact</div>
         </div>
         <div class="flex grow basis-0 justify-end">
-          <div className="dark:text-white custom-border-gray rounded-xl dark:bg-customDarkBg2 border-gray-700 pl-8 pr-8 pt-2 pb-2 text-sm">
+          <div className="text-white custom-border-gray rounded-xl
+           bg-customDarkBg2 border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex">
+            <GithubIcon />
             Source code
           </div>
           {/* <label className="relative flex justify-between items-center group text-xl w-[2.2rem] ml-4">
@@ -73,7 +76,7 @@ export const Navbar = () => {
     //     <button
     //       data-collapse-toggle="navbar-default"
     //       type="button"
-    //       className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600"
+    //       className="inline-flex items-center p-2 ml-3 text-sm text-gray-500 rounded-lg md:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 text-gray-400 hover:bg-gray-700 focus:ring-gray-600"
     //       aria-controls="navbar-default"
     //       aria-expanded="false"
     //     >
@@ -93,11 +96,11 @@ export const Navbar = () => {
     //       </svg>
     //     </button>
     //     <div className="hidden w-full md:block md:w-auto" id="navbar-default">
-    //       <ul className="flex flex-col p-4 mt-4  rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0   dark:border-gray-700">
+    //       <ul className="flex flex-col p-4 mt-4  rounded-lg border border-gray-100 md:flex-row md:space-x-8 md:mt-0 md:text-sm md:font-medium md:border-0   border-gray-700">
     //         <li>
     //           <a
     //             href="#"
-    //             className="block py-2 pr-4 pl-3 text-white  rounded md:bg-transparent  md:p-0 dark:text-white"
+    //             className="block py-2 pr-4 pl-3 text-white  rounded md:bg-transparent  md:p-0 text-white"
     //             aria-current="page"
     //           >
     //             Home

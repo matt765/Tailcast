@@ -1,308 +1,193 @@
-export const Pricing = () => (
-  <section className="w-screen flex justify-center">
-    <div className="pb-20 pt-16 dark:bg-customDarkBg2 w-3/5 ">
-      <div className="container mx-auto px-4">
-        <div className="max-w-2xl mx-auto text-center mb-16">
-          <span className="custom-block-subtitle">
-            Dolor sit amet consectutar
-          </span>
-          <h2 className="mt-6 mb-6 text-4xl lg:text-5xl font-bold font-heading text-white">
-            Choose your best plan
-          </h2>
-          <p className="mb-6 text-gray-500">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          </p>
-          <div className="inline-block py-1 px-1 bg-customDarkBg3 rounded-lg">
-            <button className="mr-1 text-sm py-2 px-4 text-gray-500 hover:text-gray-900 font-bold">
-              Monthly
-            </button>
-            <button className="text-sm py-2 px-4 text-white dark:bg-customPrimary rounded-lg shadow-mf font-bold">
-              Yearly
-            </button>
+import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
+import { useState } from "react";
+
+export const Pricing = () => {
+  const [isMonthly, setIsMonthly] = useState(true);
+
+  const handleChange = () => {
+    setIsMonthly(!isMonthly);
+  };
+
+  return (
+    <section className="w-screen flex justify-center bg-customDarkBg2">
+      <div className="pb-20 pt-12 bg-customDarkBg2 w-3/5 ">
+        <div className="container mx-auto px-4">
+          <div className="max-w-2xl mx-auto text-center mb-16">
+            <span className="custom-block-subtitle">
+              Dolor sit amet consectutar
+            </span>
+            <h2 className="mt-6 mb-6 text-4xl lg:text-5xl font-bold font-heading text-white">
+              Choose your best plan
+            </h2>
+            <p className="mb-6 text-customGrayText">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <label className="mx-auto bg-customDarkBg3 relative flex justify-between items-center group text-xl w-44 h-12 rounded-lg pr-36 pl-1 cursor-pointer">
+              <input
+                type="checkbox"
+                className="peer appearance-none"
+                checked={!isMonthly}
+                onChange={handleChange}
+              />
+              <span className="h-8 w-[5.5rem] flex items-center pr-2 bg-customDarkBg3 after:rounded-lg duration-300 ease-in-out  after:w-[30rem] after:h-10  after:bg-customPrimary  after:shadow-md after:duration-300 peer-checked:after:translate-x-[5.5rem] cursor-pointer"></span>
+              <div className="flex absolute text-white text-sm font-bold">
+                <div
+                  className={
+                    isMonthly ? "mr-9 ml-3" : "mr-9 ml-3 text-gray-400"
+                  }
+                >
+                  Monthly
+                </div>
+                <div className={isMonthly && "text-gray-400"}>Yearly</div>
+              </div>
+            </label>
           </div>
-        </div>
-        <div className="flex flex-wrap -mx-4 items-center">
-          <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
-            <div className="p-8 bg-customDarkBg3 custom-border-gray rounded-3xl">
-              <h4 className="mb-4 text-2xl font-bold font-heading text-white">Beginner</h4>
-              <span className="text-6xl font-bold text-white">Free</span>
-              <p className="mt-6 mb-6 text-gray-500 leading-loose">
-                Nullam diam arcu, sodales quis convallis sit amet, sagittis
-                varius ligula.
-              </p>
-              <ul className="mb-6 text-white">
-                <li className="mb-2 flex">
-                  <svg
-                    className="mr-2 w-5 h-5 text-green-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>Vestibulum viverra</span>
-                </li>
-                <li className="mb-2 flex">
-                  <svg
-                    className="mr-2 w-5 h-5 text-green-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>Morbi mollis metus pretium</span>
-                </li>
-                <li className="mb-2 flex">
-                  <svg
-                    className="mr-2 w-5 h-5 text-green-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>Etiam lectus nunc, commodo</span>
-                </li>
-                <li className="mb-2 flex">
-                  <svg
-                    className="mr-2 w-5 h-5 text-green-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>Ut quam nisl mollis id pretium</span>
-                </li>
-                <li className="mb-2 flex">
-                  <svg
-                    className="mr-2 w-5 h-5 text-green-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>Suspendisse bibendum</span>
-                </li>
-              </ul>
-              <a
-                className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl bg-customPrimary hover:bg-green-700 text-white font-bold leading-loose transition duration-200 mt-8"
-                href="#"
-              >
-                Get Started
-              </a>
+          <div className="flex flex-wrap -mx-4 items-center mt-20">
+            <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
+              <div className="p-8 bg-customDarkBg3 rounded-3xl">
+                <h4 className="mb-2 text-xl font-bold font-heading text-white text-left">
+                  Beginner
+                </h4>
+                <div className="flex justify-start items-end">
+                  <div className="text-5xl font-bold text-white text-left mt-4 mr-2">
+                    $0
+                  </div>
+                  <div className="text-gray-500">
+                    {isMonthly ? "/ month" : "/ year"}
+                  </div>
+                </div>
+
+                <p className="mt-4 mb-10 text-gray-500 leading-loose text-left">
+                  The perfect way to get started and get used to our tools.
+                  Lorem ipsum.
+                </p>
+                <ul className="mb-6 text-white">
+                  <li className="mb-4 flex">
+                    <CheckArrowIcon />
+                    <span>Vestibulum viverra</span>
+                  </li>
+                  <li className="mb-4 flex">
+                    <CheckArrowIcon />
+                    <span>Morbi mollis metus pretium</span>
+                  </li>
+                  <li className="mb-4 flex">
+                    <CheckArrowIcon />
+                    <span>Etiam lectus nunc, commodo</span>
+                  </li>
+                  <li className="mb-4 flex">
+                    <CheckArrowIcon />
+                    <span>Ut quam nisl mollis id pretium</span>
+                  </li>
+                  <li className="mb-4 flex">
+                    <CheckArrowIcon />
+                    <span>Suspendisse bibendum</span>
+                  </li>
+                </ul>
+                <a
+                  className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl bg-customPrimary hover:bg-green-700 text-white font-bold leading-loose transition duration-200 mt-8"
+                  href="#"
+                >
+                  Get Started
+                </a>
+              </div>
             </div>
-          </div>
-          <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
-            <div className="px-8 py-16 bg-customDarkBg3 custom-border-gray rounded-3xl">
-              <h4 className="mb-4 text-2xl font-bold font-heading text-white">Intermediate</h4>
-              <span className="text-6xl font-bold text-white">48$</span>
-              <p className="mt-6 mb-6 text-gray-500 leading-loose">
-                Nullam diam arcu, sodales quis convallis sit amet, sagittis
-                varius ligula.
-              </p>
-              <ul className="mb-6 text-white">
-                <li className="mb-2 flex">
-                  <svg
-                    className="mr-2 w-5 h-5 text-green-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>Vestibulum viverra</span>
-                </li>
-                <li className="mb-2 flex">
-                  <svg
-                    className="mr-2 w-5 h-5 text-green-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>Morbi mollis metus pretium</span>
-                </li>
-                <li className="mb-2 flex">
-                  <svg
-                    className="mr-2 w-5 h-5 text-green-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>Etiam lectus nunc, commodo</span>
-                </li>
-                <li className="mb-2 flex">
-                  <svg
-                    className="mr-2 w-5 h-5 text-green-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>Ut quam nisl mollis id pretium</span>
-                </li>
-                <li className="mb-2 flex">
-                  <svg
-                    className="mr-2 w-5 h-5 text-green-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>Suspendisse bibendum</span>
-                </li>
-              </ul>
-              <a
-                className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl bg-customPrimary hover:bg-green-700 text-white font-bold leading-loose transition duration-200 mt-8"
-                href="#"
-              >
-                Get Started
-              </a>
+            <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
+              <div className="px-8 py-8 bg-customDarkBg3 rounded-3xl">
+                <h4 className="mb-2 text-2xl font-bold font-heading text-white text-left">
+                  Standard
+                </h4>
+                <div className="flex justify-start items-end">
+                  <div className="text-5xl font-bold text-white text-left mt-4 mr-2">
+                    {isMonthly ? "$19" : "$180"}
+                  </div>
+                  <div className="text-gray-500">
+                    {isMonthly ? "/ month" : "/ year"}
+                  </div>
+                </div>
+                <p className="mt-6 mb-14 text-gray-500 leading-loose text-left">
+                  The perfect way to get started and get used to our tools.
+                  Lorem ipsum.
+                </p>
+                <ul className="mb-14 text-white">
+                  <li className="mb-4 flex">
+                    <CheckArrowIcon />
+                    <span>Vestibulum viverra</span>
+                  </li>
+                  <li className="mb-4 flex">
+                    <CheckArrowIcon />
+                    <span>Morbi mollis metus pretium</span>
+                  </li>
+                  <li className="mb-4 flex">
+                    <CheckArrowIcon />
+                    <span>Etiam lectus nunc, commodo</span>
+                  </li>
+                  <li className="mb-4 flex">
+                    <CheckArrowIcon />
+                    <span>Ut quam nisl mollis id pretium</span>
+                  </li>
+                  <li className="mb-4 flex">
+                    <CheckArrowIcon />
+                    <span>Suspendisse bibendum</span>
+                  </li>
+                </ul>
+                <a
+                  className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl bg-customPrimary hover:bg-green-700 text-white font-bold leading-loose transition duration-200 mt-8"
+                  href="#"
+                >
+                  Get Started
+                </a>
+              </div>
             </div>
-          </div>
-          <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
-            <div className="p-8 bg-customDarkBg3 custom-border-gray rounded-3xl">
-              <h4 className="mb-4 text-2xl font-bold font-heading text-white">Advanced</h4>
-              <span className="text-6xl font-bold text-white">80$</span>
-              <p className="mt-6 mb-6 text-gray-500 leading-loose">
-                Nullam diam arcu, sodales quis convallis sit amet, sagittis
-                varius ligula.
-              </p>
-              <ul className="mb-6 text-white">
-                <li className="mb-2 flex">
-                  <svg
-                    className="mr-2 w-5 h-5 text-green-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>Vestibulum viverra</span>
-                </li>
-                <li className="mb-2 flex">
-                  <svg
-                    className="mr-2 w-5 h-5 text-green-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>Morbi mollis metus pretium</span>
-                </li>
-                <li className="mb-2 flex">
-                  <svg
-                    className="mr-2 w-5 h-5 text-green-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>Etiam lectus nunc, commodo</span>
-                </li>
-                <li className="mb-2 flex">
-                  <svg
-                    className="mr-2 w-5 h-5 text-green-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>Ut quam nisl mollis id pretium</span>
-                </li>
-                <li className="mb-2 flex">
-                  <svg
-                    className="mr-2 w-5 h-5 text-green-600"
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewbox="0 0 20 20"
-                    fill="currentColor"
-                  >
-                    <path
-                      fill-rule="evenodd"
-                      d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                      clip-rule="evenodd"
-                    ></path>
-                  </svg>
-                  <span>Suspendisse bibendum</span>
-                </li>
-              </ul>
-              <a
-                className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl bg-customPrimary hover:bg-green-700 text-white font-bold leading-loose transition duration-200 mt-8"
-                href="#"
-              >
-                Get Started
-              </a>
+            <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
+              <div className="p-8 bg-customDarkBg3 rounded-3xl">
+                <h4 className="mb-2 text-xl font-bold font-heading text-white text-left">
+                  Premium
+                </h4>
+                <div className="flex justify-start items-end">
+                  <div className="text-5xl font-bold text-white text-left mt-4 mr-2">
+                    {isMonthly ? "$36" : "$390"}
+                  </div>
+                  <div className="text-gray-500">
+                    {isMonthly ? "/ month" : "/ year"}
+                  </div>
+                </div>
+                <p className="mt-4 mb-14 text-gray-500 leading-loose text-left">
+                  The perfect way to get started and get used to our tools.
+                  Lorem ipsum.
+                </p>
+                <ul className="mb-6 text-white">
+                  <li className="mb-4 flex">
+                    <CheckArrowIcon />
+                    <span>Vestibulum viverra</span>
+                  </li>
+                  <li className="mb-4 flex">
+                    <CheckArrowIcon />
+                    <span>Morbi mollis metus pretium</span>
+                  </li>
+                  <li className="mb-4 flex">
+                    <CheckArrowIcon />
+                    <span>Etiam lectus nunc, commodo</span>
+                  </li>
+                  <li className="mb-4 flex">
+                    <CheckArrowIcon />
+                    <span>Ut quam nisl mollis id pretium</span>
+                  </li>
+                  <li className="mb-4 flex">
+                    <CheckArrowIcon />
+                    <span>Suspendisse bibendum</span>
+                  </li>
+                </ul>
+                <a
+                  className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl bg-customPrimary hover:bg-green-700 text-white font-bold leading-loose transition duration-200 mt-8"
+                  href="#"
+                >
+                  Get Started
+                </a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
-);
+    </section>
+  );
+};

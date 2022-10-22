@@ -1,18 +1,18 @@
 import { FacebookIcon } from "../assets/icons/FacebookIcon";
 import { InstagramIcon } from "../assets/icons/InstagramIcon";
-import { LogoIcon } from "../assets/icons/LogoIcon";
+import { RaystreamsLogo } from "../assets/logos/RaystreamsLogo";
 import { TwitterIcon } from "../assets/icons/TwitterIcon";
 
 export const Footer = () => {
   return (
     <footer>
-      <div className="py-20 dark:bg-customDarkBg1 radius-for-skewed ">
+      <div className="py-20 bg-customDarkBg1 radius-for-skewed ">
         <div className="container mx-auto px-4 w-2/3">
           <div className="flex flex-wrap">
             <div className="w-full lg:w-1/3 mb-16 lg:mb-0">
               <div className="flex justify-start items-center grow basis-0">
                 <div className="dark:text-white mr-2 text-6xl">
-                  <LogoIcon />
+                  <RaystreamsLogo />
                 </div>
                 <div className="dark:text-white font-['Inter'] font-bold text-xl">
                   Spotify

@@ -1,3 +1,5 @@
+/* Top */
+
 .custom-shape-divider-bottom-1665696614 {
   width: 100%;
   overflow: hidden;
@@ -13,9 +15,8 @@
   transform: rotateY(180deg);
 }
 
-.custom-shape-divider-bottom-1665696614 .shape-fill {
-  fill: #1f2023;
-}
+/* Bottom */
+
 .custom-shape-divider-top-1665696661 {
   overflow: hidden;
   line-height: 0;
@@ -29,6 +30,4 @@
   transform: rotateY(180deg);
 }
 
-.custom-shape-divider-top-1665696661 .shape-fill {
-  fill: #1f2023;
-}
+
