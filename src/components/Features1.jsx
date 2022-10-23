@@ -9,13 +9,13 @@ import { motion } from "framer-motion";
 export const Features1 = () => {
   return (
     <section>
-      <div className="py-20 bg-customDarkBg2 radius-for-skewed pt-44">
+      <div className="my-20 bg-customDarkBg2 pt-44">
         <div className="container mx-auto px-4">
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: 0.3 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
           >
             <div className="flex flex-wrap items-center">
               <div className="w-full lg:w-1/2 mb-12 lg:mb-0">

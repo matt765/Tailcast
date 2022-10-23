@@ -9,7 +9,7 @@ export const Hero = () => {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4 }}
+          transition={{ duration: 0.5 }}
         >
           <div className="text-customSecondary text-base  mb-6 mt-32 font-bold">
             Introducing Design Data Platform
@@ -18,7 +18,7 @@ export const Hero = () => {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.05 }}
+          transition={{ duration: 0.5, delay: 0.05 }}
         >
           <div className="font-['Inter'] text-7xl font-bold tracking-wide pl-10 pr-10 hero-title-gradient">
             Turn your ideas into reality
@@ -27,7 +27,7 @@ export const Hero = () => {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.1 }}
+          transition={{ duration: 0.5, delay: 0.1 }}
         >
           <div className="text-customGrayText text-base mt-10">
             Specify helps you unify your brand identity by collecting, storing
@@ -37,7 +37,7 @@ export const Hero = () => {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.4, delay: 0.15 }}
+          transition={{ duration: 0.5, delay: 0.15 }}
         >
           <div className="flex mt-14 mb-40 justify-center">
             <div className="w-60 h-14 rounded-xl font-bold bg-customPrimary text-white mr-10  flex justify-center items-center">

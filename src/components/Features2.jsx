@@ -13,7 +13,7 @@ export const Features2 = () => (
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
           >
             <div className="mb-4 py-3 -ml-10 pr-2 rounded">
               <img
@@ -37,7 +37,7 @@ export const Features2 = () => (
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
             viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: 0.2 }}
+            transition={{ duration: 0.5, delay: 0.2 }}
           >
             <span className="custom-block-subtitle">
               Dolor sit amet consectutar
