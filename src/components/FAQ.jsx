@@ -76,8 +76,8 @@ const FAQBox = ({ defaultOpen, title, content }) => {
       <div class="flex flex-col p-2  justify-center items-start">
         <h3 class=" custom-content-title">{title}</h3>
         <p
-          className={`text-customGrayText pt-4 transition-all duration-500 overflow-hidden ${
-            isOpen ? "max-h-96 mb-4" : "max-h-0"
+          className={`text-customGrayText pt-4 transition-all duration-300 overflow-hidden ${
+            isOpen ? "max-h-96" : "max-h-0"
           }`}
         >
           {content}

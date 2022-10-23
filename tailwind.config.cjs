@@ -12,7 +12,7 @@ module.exports = {
         'customDarkBg3Hover': "rgb(55, 56, 62)",
         'customContentSubtitle': 'rgb(178, 184, 205)',
         'customGrayBorder': 'rgb(255,255,255,0.1)',
-        'customGrayText': 'rgb(174, 178, 183)'
+        'customGrayText': 'rgb(174, 178, 183)',
       },
       fontFamily: {
         'Inter': 'Inter',

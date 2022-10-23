@@ -17,6 +17,7 @@
     "@fontsource/poppins": "^4.5.10",
     "@fontsource/roboto": "^4.5.8",
     "astro": "^1.4.4",
+    "framer-motion": "^7.6.1",
     "tailwindcss": "^3.1.8"
   },
   "devDependencies": {
