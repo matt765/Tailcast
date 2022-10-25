@@ -5,13 +5,13 @@ import { motion } from "framer-motion";
 export const Hero = () => {
   return (
     <section className="w-screen  flex justify-center items-center bg-customDarkBg1 mb-64 hero-bg-gradient">
-      <div className="w-2/5 flex flex-col justify-center items-center pt-16 text-center">
+      <div className="w-full md:w-[800px] xl:w-[900px] flex flex-col justify-center items-center pt-16 text-center">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
         >
-          <div className="text-customSecondary text-base  mb-6 mt-32 font-bold">
+          <div className="text-customSecondary text-sm sm:text-base  mb-6 sm:mt-32 mt-16  font-bold">
             Introducing Design Data Platform
           </div>
         </motion.div>
@@ -20,7 +20,7 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.05 }}
         >
-          <div className="font-['Inter'] text-7xl font-bold tracking-wide pl-10 pr-10 hero-title-gradient">
+          <div className="font-['Inter'] text-5xl sm:text-6xl lg:text-6xl xl:text-7xl font-bold tracking-wide  hero-title-gradient  px-12 sm:px-20 md:px-24 lg:px-28">
             Turn your ideas into reality
           </div>
         </motion.div>
@@ -29,7 +29,7 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <div className="text-customGrayText text-base mt-10">
+          <div className="text-customGrayText text-sm sm:text-base mt-10 px-12">
             Specify helps you unify your brand identity by collecting, storing
             and distributing design tokens and assets — automatically. Lorem
           </div>
@@ -39,11 +39,11 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.15 }}
         >
-          <div className="flex mt-14 mb-40 justify-center">
-            <div className="w-60 h-14 rounded-xl font-bold bg-customPrimary text-white mr-10  flex justify-center items-center">
+          <div className="flex flex-col gap-6 sm:flex-row mt-14 mb-40 justify-center">
+            <div className="custom-button-colored w-80 sm:w-60 h-14 mr-0 sm:mr-10">
               Get Started
             </div>
-            <div className="w-60 h-14 rounded-xl font-bold text-white border border-solid  flex justify-center items-center cursor-pointer bg-customDarkBg2 border-customPrimary">
+            <div className="w-80 sm:w-60 h-14 rounded-xl font-bold text-white border border-solid  flex justify-center items-center cursor-pointer bg-customDarkBg2 border-customPrimary">
               Live demo
             </div>
           </div>

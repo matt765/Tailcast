@@ -1,6 +1,9 @@
 import { useEffect, useState } from "react";
 import { RaystreamsLogo } from "../assets/logos/RaystreamsLogo";
 import { GithubIcon } from "../assets/icons/GithubIcon";
+import { FacebookIcon } from "../assets/icons/FacebookIcon";
+import { InstagramIcon } from "../assets/icons/InstagramIcon";
+import { TwitterIcon } from "../assets/icons/TwitterIcon";
 
 import { motion, AnimatePresence } from "framer-motion";
 
@@ -53,7 +56,7 @@ export const Navbar = () => {
           >
             <div
               className="flex flex-col mt-16 lg:hidden absolute top-4 left-0  bg-customDarkBg1 z-50 w-full 
-        items-center gap-10 pb-10 border-b border-solid border-customDarkBg2
+        items-center gap-10 pb-10 border-y border-solid border-customDarkBg3 pt-10
         "
             >
               <div className="navbar-link">Home</div>
@@ -61,6 +64,26 @@ export const Navbar = () => {
               <div className="navbar-link">Features</div>
               <div className="navbar-link">About us</div>
               <div className="navbar-link">Contact</div>
+              <div>
+                <a
+                  className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
+                  href="#"
+                >
+                  <FacebookIcon />
+                </a>
+                <a
+                  className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
+                  href="#"
+                >
+                  <TwitterIcon />
+                </a>
+                <a
+                  className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
+                  href="#"
+                >
+                  <InstagramIcon />
+                </a>
+              </div>
             </div>
           </motion.div>
         )}

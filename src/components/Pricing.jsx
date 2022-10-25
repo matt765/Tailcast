@@ -29,7 +29,7 @@ export const Pricing = () => {
                 checked={!isMonthly}
                 onChange={handleChange}
               />
-              <span className="h-8 w-[5.5rem] flex items-center pr-2 bg-customDarkBg3 after:rounded-lg duration-300 ease-in-out  after:w-[30rem] after:h-10  after:bg-customPrimary  after:shadow-md after:duration-300 peer-checked:after:translate-x-[5.5rem] cursor-pointer"></span>
+              <span className="h-8 w-[5.5rem] flex items-center pr-2 bg-customDarkBg3 after:rounded-lg duration-300 ease-in-out  after:w-[30rem] after:h-10  after:bg-customPrimary hover:after:bg-[#7765e6]  after:shadow-md after:duration-300 peer-checked:after:translate-x-[5.5rem] cursor-pointer"></span>
               <div className="flex absolute text-white text-sm font-bold">
                 <div
                   className={
@@ -57,7 +57,7 @@ export const Pricing = () => {
                   </div>
                 </div>
 
-                <p className="mt-4 mb-10 text-gray-500 leading-loose text-left">
+                <p className="mt-4 mb-14 text-gray-500 leading-loose text-left">
                   The perfect way to get started and get used to our tools.
                   Lorem ipsum.
                 </p>
@@ -84,7 +84,7 @@ export const Pricing = () => {
                   </li>
                 </ul>
                 <a
-                  className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl bg-customPrimary hover:bg-green-700 text-white font-bold leading-loose transition duration-200 mt-8"
+                  className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
                   href="#"
                 >
                   Get Started
@@ -93,7 +93,7 @@ export const Pricing = () => {
             </div>
             <div className="w-full md:w-1/2 lg:w-1/3 px-4 mb-8 lg:mb-0">
               <div className="px-8 py-8 bg-customDarkBg3 rounded-3xl">
-                <h4 className="mb-2 text-2xl font-bold font-heading text-white text-left">
+                <h4 className="mb-4 text-2xl font-bold font-heading text-white text-left">
                   Standard
                 </h4>
                 <div className="flex justify-start items-end">
@@ -104,7 +104,7 @@ export const Pricing = () => {
                     {isMonthly ? "/ month" : "/ year"}
                   </div>
                 </div>
-                <p className="mt-6 mb-14 text-gray-500 leading-loose text-left">
+                <p className="mt-8 mb-16 text-gray-500 leading-loose text-left">
                   The perfect way to get started and get used to our tools.
                   Lorem ipsum.
                 </p>
@@ -131,7 +131,7 @@ export const Pricing = () => {
                   </li>
                 </ul>
                 <a
-                  className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl bg-customPrimary hover:bg-green-700 text-white font-bold leading-loose transition duration-200 mt-8"
+                  className="inline-block text-center py-2 px-4 w-full custom-button-colored leading-loose transition duration-200 mt-20"
                   href="#"
                 >
                   Get Started
@@ -178,7 +178,7 @@ export const Pricing = () => {
                   </li>
                 </ul>
                 <a
-                  className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl bg-customPrimary hover:bg-green-700 text-white font-bold leading-loose transition duration-200 mt-8"
+                  className="inline-block text-center py-2 px-4 w-full rounded-xl rounded-t-xl custom-button-colored font-bold leading-loose mt-16"
                   href="#"
                 >
                   Get Started

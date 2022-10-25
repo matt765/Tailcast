@@ -31,7 +31,7 @@ export const FeaturesDiagonal = () => {
               Pellentesque efficitur nisl sodales egestas lobortis. Lorem ipsum
               dolor sit amet, consectetur adipiscing elit. 
             </p>
-            <div className="w-2/5 h-12 rounded-xl font-bold bg-customPrimary text-white mr-10  flex justify-center items-center">
+            <div className="w-2/5 h-12 custom-button-colored mr-10 ">
               Get Started
             </div>
           </div>
