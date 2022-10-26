@@ -4,7 +4,7 @@ import featuresdiagonal from "../assets/images/featuresdiagonal.png";
 
 export const FeaturesDiagonal = () => {
   return (
-    <section className="mb-16 w-full flex flex-col justify-center items-center bg-customDarkBg1">
+    <section className="lg:mb-16 w-full flex flex-col justify-center items-center bg-customDarkBg1">
       <div class="custom-shape-divider-bottom-1665696614">
         <svg
           data-name="Layer 1"
@@ -25,9 +25,9 @@ export const FeaturesDiagonal = () => {
         viewport={{ once: true }}
         transition={{ duration: 0.5, delay: 0.2 }}
       >
-        <div className="w-full flex justify-center bg-customDarkBg1 pt-24 pb-20">
-          <div className="flex w-3/5 justify-center items-center">
-            <div className="w-1/2 flex flex-col">
+        <div className=" 2xl:w-[1150px] xl:w-[1050px]  md:w-4/5 flex justify-center bg-customDarkBg1 pt-12 lg:pt-24 pb-8 lg:pb-20 mx-auto lg:flex-row flex-col">
+       
+            <div className="w-3/4 lg:w-1/2 flex flex-col lg:mx-unset mx-auto">
               <span className="custom-block-subtitle">
                 Dolor sit amet consectutar
               </span>
@@ -43,14 +43,14 @@ export const FeaturesDiagonal = () => {
                 Get Started
               </div>
             </div>
-            <div className="w-1/2 pl-16">
+            <div className="w-4/5 lg:w-1/2 lg:pl-16 flex justify-center mx-auto pt-16 lg:pt-0">
               <img
                 src={featuresdiagonal}
                 alt="f1"
                 className="rounded-xl  custom-border-gray"
               />
             </div>
-          </div>
+          
         </div>
       </motion.div>
       <div class="custom-shape-divider-top-1665696661 w-full">

@@ -6,7 +6,7 @@ import testimonial3 from "../assets/images/testimonial3.png";
 import { motion } from "framer-motion";
 
 export const Testimonials = () => (
-  <section className="w-full flex justify-center pt-10 mb-32 bg-customDarkBg2">
+  <section className="w-full flex justify-center pt-10 mb-16 lg:mb-32 bg-customDarkBg2">
     <div className="flex flex-col w-full lg:w-[1150px] justify-center">
       <motion.div
         initial={{ opacity: 0 }}
