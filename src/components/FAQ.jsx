@@ -1,55 +1,62 @@
 import { useState } from "react";
+import { motion } from "framer-motion";
 
 export const FAQ = () => (
   <section class="relative pt-16 pb-16 bg-blueGray-50 overflow-hidden">
-    <img
-      class="absolute bottom-0 left-1/2 transform -translate-x-1/2"
-      src="flaro-assets/images/faqs/gradient.svg"
-      alt=""
-    />
-    <div class="relative z-10 container px-4 mx-auto">
-      <div class="md:max-w-4xl mx-auto">
-        <p class="mb-7 custom-block-subtitle text-center">
-          Have any questions?
-        </p>
-        <h2 class="mb-16 custom-block-big-title text-center">
-          Frequently Asked Questions
-        </h2>
-        <div class="mb-11 flex flex-wrap -m-1">
-          <div class="w-full p-1">
-            <FAQBox
-              title="Do you provide any free plan?"
-              content="Lorem ipsum dolor sit amet, to the consectr adipiscing elit.
+    <motion.div
+      initial={{ opacity: 0 }}
+      whileInView={{ opacity: 1 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.5, delay: 0.2 }}
+    >
+      <img
+        class="absolute bottom-0 left-1/2 transform -translate-x-1/2"
+        src="flaro-assets/images/faqs/gradient.svg"
+        alt=""
+      />
+      <div class="relative z-10 container px-4 mx-auto">
+        <div class="md:max-w-4xl mx-auto">
+          <p class="mb-7 custom-block-subtitle text-center">
+            Have any questions?
+          </p>
+          <h2 class="mb-16 custom-block-big-title text-center">
+            Frequently Asked Questions
+          </h2>
+          <div class="mb-11 flex flex-wrap -m-1">
+            <div class="w-full p-1">
+              <FAQBox
+                title="Do you provide any free plan?"
+                content="Lorem ipsum dolor sit amet, to the consectr adipiscing elit.
               Volutpat tempor to the condi mentum vitae vel purus. Lorem ipsum
               dolor sit amet, to the consectr adipiscing elit. Volutpat tempor to
               the condi mentum vitae vel purus. Lorem ipsum dolor sit amet, to the
               consectr adipiscing elit. Volutpat tempor to the condi mentum vitae
               vel purus."
-              defaultOpen
-            />
-          </div>
-          <div class="w-full p-1">
-            <FAQBox
-              title="How to claim your 25% discount offer?"
-              content="Lorem ipsum dolor sit amet, to the consectr adipiscing elit.
+                defaultOpen
+              />
+            </div>
+            <div class="w-full p-1">
+              <FAQBox
+                title="How to claim your 25% discount offer?"
+                content="Lorem ipsum dolor sit amet, to the consectr adipiscing elit.
               Volutpat tempor to the condi mentum vitae vel purus. Lorem
               ipsum dolor sit amet, to the consectr adipiscing elit.
               Volutpat tempor to the condi mentum vitae vel purus."
-              defaultOpen
-            />
-          </div>
-          <div class="w-full p-1">
-            <FAQBox
-              title="What&rsquo;s your refund policy?"
-              content="Lorem ipsum dolor sit amet, to the consectr adipiscing elit.
+                defaultOpen
+              />
+            </div>
+            <div class="w-full p-1">
+              <FAQBox
+                title="What&rsquo;s your refund policy?"
+                content="Lorem ipsum dolor sit amet, to the consectr adipiscing elit.
               Volutpat tempor to the condi mentum vitae vel purus."
-              defaultOpen
-            />
-          </div>
-          <div class="w-full p-1">
-            <FAQBox
-              title="How to get support for the product?"
-              content=" Lorem ipsum dolor sit amet, to the consectr adipiscing elit.
+                defaultOpen
+              />
+            </div>
+            <div class="w-full p-1">
+              <FAQBox
+                title="How to get support for the product?"
+                content=" Lorem ipsum dolor sit amet, to the consectr adipiscing elit.
               Volutpat tempor to the condi mentum vitae vel purus. Lorem
               ipsum dolor sit amet, to the consectr adipiscing elit.
               Volutpat tempor to the condi mentum vitae vel purus. Lorem
@@ -57,11 +64,12 @@ export const FAQ = () => (
               Volutpat tempor to the condi mentum vitae vel purus. Lorem
               ipsum dolor sit amet, to the consectr adipiscing elit.
               Volutpat tempor to the condi mentum vitae vel purus."
-            />
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   </section>
 );
 

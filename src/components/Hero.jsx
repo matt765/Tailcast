@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export const Hero = () => {
   return (
-    <section className="w-screen  flex justify-center items-center bg-customDarkBg1 mb-64 hero-bg-gradient">
+    <section className="w-screen  flex justify-center items-center bg-customDarkBg1 mb-[4vw] md:mb-[12vw] lg:mb-44 xl:mb-60 xll:mb-72 hero-bg-gradient">
       <div className="w-full md:w-[800px] xl:w-[900px] flex flex-col justify-center items-center pt-16 text-center">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -39,7 +39,7 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.15 }}
         >
-          <div className="flex flex-col gap-6 sm:flex-row mt-14 mb-40 justify-center">
+          <div className="flex flex-col gap-6 sm:flex-row mt-14 mb-24 sm:mb-40 justify-center">
             <div className="custom-button-colored w-80 sm:w-60 h-14 mr-0 sm:mr-10">
               Get Started
             </div>
@@ -57,11 +57,10 @@ export const Hero = () => {
             <img
               src={dashboard}
               alt="123"
-              width="1200px"
-              className="mx-auto absolute z-10 rounded-xl  custom-border-gray hero-dashboard-border-gradient"
+              className="w-4/5 2xl:w-[1200px] mx-auto absolute z-10 rounded-xl  custom-border-gray hero-dashboard-border-gradient"
             />
 
-            <div className="custom-shape-divider-bottom-1665343298 mt-32 ">
+            <div className="custom-shape-divider-bottom-1665343298 mt-4 sm:mt-16 md:mt-32 ">
               <svg
                 data-name="Layer 1"
                 xmlns="http://www.w3.org/2000/svg"

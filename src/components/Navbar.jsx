@@ -12,7 +12,7 @@ export const Navbar = () => {
 
   return (
     <nav className="w-full h-20 flex flex-col justify-center items-center fixed bg-customDarkBg1 lg:bg-customDarkBg1Transparent z-50 lg:backdrop-blur-xl">
-      <div className="2xl:w-8/12 xl:w-10/12 w-11/12 flex justify-between items-center relative">
+      <div className="2xl:w-[1280px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
         <div className="flex justify-start items-center grow basis-0">
           <div className="dark:text-white mr-2 text-6xl">
             <RaystreamsLogo />

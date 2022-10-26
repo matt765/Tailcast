@@ -4,24 +4,33 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        'customPrimary': "rgb(97, 77, 226)",
-        'customSecondary': 'rgb(158, 145, 237)',
-        'customDarkBg1': "rgb(31, 32, 35)",
-        'customDarkBg2': "rgb(38, 39, 43)",
-        'customDarkBg3': "rgb(48, 49, 54)",
-        'customDarkBg3Hover': "rgb(55, 56, 62)",
-        'customContentSubtitle': 'rgb(178, 184, 205)',
-        'customGrayBorder': 'rgb(255,255,255,0.1)',
-        'customGrayText': 'rgb(174, 178, 183)',
-        'customDarkBg1Transparent': "rgb(31, 32, 35, 0.7)",
+        customPrimary: "rgb(97, 77, 226)",
+        customSecondary: "rgb(158, 145, 237)",
+        customDarkBg1: "rgb(31, 32, 35)",
+        customDarkBg2: "rgb(38, 39, 43)",
+        customDarkBg3: "rgb(48, 49, 54)",
+        customDarkBg3Hover: "rgb(55, 56, 62)",
+        customContentSubtitle: "rgb(178, 184, 205)",
+        customGrayBorder: "rgb(255,255,255,0.1)",
+        customGrayText: "rgb(174, 178, 183)",
+        customDarkBg1Transparent: "rgb(31, 32, 35, 0.7)",
       },
       fontFamily: {
-        'Inter': 'Inter',
-        'Poppins': 'Poppins',
-        'Roboto': 'Roboto'	
-      }
-    }
-	  },
+        Inter: "Inter",
+        Poppins: "Poppins",
+        Roboto: "Roboto",
+      },
+      screens: {
+        xs: "530px",
+        sm: "640px",
+        md: "768px",
+        lg: "1024px",
+        xl: "1280px",
+        xll: "1400px",
+        "2xl": "1536px",
+      },
+    },
+  },
   plugins: [],
   darkMode: "class",
 };
