@@ -3,7 +3,7 @@ export const StripeLogo = () => (
     width="77"
     height="32"
     viewBox="0 0 77 32"
-    class="dark:fill-[rgb(174,178,183)] fill-black ml-8"
+    class="dark:fill-[rgb(174,178,183)] fill-black"
     xmlns="http://www.w3.org/2000/svg"
   >
     <g clip-path="url(#clip0)">

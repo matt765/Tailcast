@@ -15,10 +15,12 @@ import "../styles/Navbar.styles.css";
 import "../styles/Hero.styles.css";
 import "../styles/Utils.styles.css";
 import "../styles/FeaturesDiagonal.styles.css";
+import { ScrollUpButton } from "../components/ScrollUpButton";
+import { InvitationModal } from "../components/InvitationModal";
 
 ---
 
-<Layout title="Raystreams">
+<Layout title="Tidestream">
   <Navbar client:load />
   <Hero client:load />
   <Features1 client:load />
@@ -30,4 +32,5 @@ import "../styles/FeaturesDiagonal.styles.css";
   <Brands client:load />
   <FAQ client:load />
   <Footer />
+  <ScrollUpButton  client:load />
 </Layout>

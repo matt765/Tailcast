@@ -14,7 +14,7 @@ export const FAQ = () => (
         src="flaro-assets/images/faqs/gradient.svg"
         alt=""
       />
-      <div class="relative z-10 container px-4 mx-auto">
+      <div class="relative z-10 container px-2 sm:px-8 lg:px-4 mx-auto w-11/12 sm:w-full">
         <div class="md:max-w-4xl mx-auto">
           <p class="mb-7 custom-block-subtitle text-center">
             Have any questions?
@@ -78,11 +78,11 @@ const FAQBox = ({ defaultOpen, title, content }) => {
 
   return (
     <div
-      class="pt-6 pb-2 px-8  rounded-3xl bg-customDarkBg3 custom-border-gray-darker mb-4 relative hover:bg-customDarkBg3Hover cursor-pointer"
+      class="pt-2 sm:pt-6 pb-2 px-3 sm:px-8  rounded-3xl bg-customDarkBg3 custom-border-gray-darker mb-4 relative hover:bg-customDarkBg3Hover cursor-pointer"
       onClick={() => setIsOpen(!isOpen)}
     >
       <div class="flex flex-col p-2  justify-center items-start">
-        <h3 class=" custom-content-title">{title}</h3>
+        <h3 class=" custom-content-title pt-3 sm:pt-0 pr-8 sm:pr-0">{title}</h3>
         <p
           className={`text-customGrayText pt-4 transition-all duration-300 overflow-hidden ${
             isOpen ? "max-h-96" : "max-h-0"
@@ -91,7 +91,7 @@ const FAQBox = ({ defaultOpen, title, content }) => {
           {content}
         </p>
       </div>
-      <div class="absolute top-8 right-8">
+      <div class="absolute top-6 right-4 sm:top-8 sm:right-8">
         <svg
           width="28px"
           height="30px"

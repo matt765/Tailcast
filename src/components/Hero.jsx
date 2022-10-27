@@ -1,8 +1,11 @@
-import { useLayoutEffect, useRef } from "react";
+import { useState } from "react";
 import dashboard from "../assets/images/dashboard.png";
 import { motion } from "framer-motion";
+import { InvitationModal } from "./InvitationModal";
 
 export const Hero = () => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
   return (
     <section className="w-screen  flex justify-center items-center bg-customDarkBg1 mb-[4vw] md:mb-[12vw] lg:mb-44 xl:mb-60 xll:mb-72 hero-bg-gradient">
       <div className="w-full md:w-[800px] xl:w-[900px] flex flex-col justify-center items-center pt-16 text-center">
@@ -40,10 +43,16 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.15 }}
         >
           <div className="flex flex-col gap-6 sm:flex-row mt-14 mb-24 sm:mb-40 justify-center">
-            <div className="custom-button-colored w-80 sm:w-60 h-14 mr-0 sm:mr-10">
+            <div
+              className="custom-button-colored w-80 sm:w-60 h-14 mr-0 sm:mr-10"
+              onClick={() => setIsModalOpen(true)}
+            >
               Get Started
             </div>
-            <div className="w-80 sm:w-60 h-14 rounded-xl font-bold text-white border border-solid  flex justify-center items-center cursor-pointer bg-customDarkBg2 border-customPrimary">
+            <div
+              className="w-80 sm:w-60 h-14 rounded-xl font-bold text-white border border-solid  flex justify-center items-center cursor-pointer bg-customDarkBg2 hover:bg-customDarkBg3 border-customPrimary transition"
+              onClick={() => setIsModalOpen(true)}
+            >
               Live demo
             </div>
           </div>
@@ -76,6 +85,9 @@ export const Hero = () => {
           </div>
         </motion.div>
       </div>
+      {isModalOpen && (
+        <InvitationModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
+      )}
     </section>
   );
 };
