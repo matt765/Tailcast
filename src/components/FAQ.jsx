@@ -10,11 +10,6 @@ export const FAQ = () => (
       viewport={{ once: true }}
       transition={{ duration: 0.5, delay: 0.2 }}
     >
-      <img
-        className="absolute bottom-0 left-1/2 transform -translate-x-1/2"
-        src="flaro-assets/images/faqs/gradient.svg"
-        alt=""
-      />
       <div className="relative z-10 container px-2 sm:px-8 lg:px-4 mx-auto w-11/12 sm:w-full">
         <div className="md:max-w-4xl mx-auto">
           <p className="mb-7 custom-block-subtitle text-center">
@@ -81,7 +76,9 @@ const FAQBox = ({ defaultOpen, title, content }) => {
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="flex flex-col p-2  justify-center items-start">
-        <h3 className=" custom-content-title pt-3 sm:pt-0 pr-8 sm:pr-0">{title}</h3>
+        <h3 className=" custom-content-title pt-3 sm:pt-0 pr-8 sm:pr-0">
+          {title}
+        </h3>
         <p
           className={`text-customGrayText pt-4 transition-all duration-300 overflow-hidden ${
             isOpen ? "max-h-96" : "max-h-0"
@@ -94,7 +91,7 @@ const FAQBox = ({ defaultOpen, title, content }) => {
         <svg
           width="28px"
           height="30px"
-          viewbox="0 0 20 20"
+          viewBox="0 0 20 20"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
           className={`transition-all duration-500  ${
@@ -104,9 +101,9 @@ const FAQBox = ({ defaultOpen, title, content }) => {
           <path
             d="M4.16732 12.5L10.0007 6.66667L15.834 12.5"
             stroke="#4F46E5"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
+            strokeWidth="2"
+            strokeLinecap="round"
+            strokeLinejoin="round"
           ></path>
         </svg>
       </div>

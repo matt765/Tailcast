@@ -24,7 +24,7 @@ export const Footer = () => {
                 <a
                   href="https://bootstrapious.com/p/bootstrap-4-dark-admin"
                   target="_blank"
-                  className="text-gray-100 ml-1 text-lg"
+                  className="text-gray-100 ml-1.5 "
                 >
                    here.
                 </a>
