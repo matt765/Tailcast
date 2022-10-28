@@ -3,7 +3,7 @@ export const NetflixLogo = () => (
     width="119"
     height="32"
     viewBox="0 0 119 32"
-    className="fill-[rgb(174,178,183)] fill-black "
+    className="fill-[rgb(174,178,183)] "
     xmlns="http://www.w3.org/2000/svg"
   >
     <g clipPath="url(#clip0)">
