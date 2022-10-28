@@ -23,10 +23,10 @@ export const InvitationModal = ({ setIsOpen }) => (
           <div className="flex relative">
             <div className="w-1/2 hidden lg:inline">
               <h2 className="mt-6 mb-2 text-5xl font-bold tracking-normal text-white">
-                Build &amp; Launch
+                Subscribe Now
               </h2>
               <h2 className="text-5xl font-bold tracking-normal text-customSecondary">
-                without problems
+                Winter is coming
               </h2>
 
               <ul className="mb-6 text-white mt-12">
