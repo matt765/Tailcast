@@ -9,6 +9,7 @@ import { FAQ } from "./FAQ.jsx";
 import { Brands } from "./Brands.jsx";
 import { Divider } from "./Divider";
 import { Footer } from "./Footer.jsx";
+
 import { motion } from "framer-motion";
 
 export const Test = () => {

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion } from "framer-motion";
 
 import { InvitationModal } from "./InvitationModal";
 import dashboard from "../assets/images/dashboard.jpg";
@@ -8,7 +8,10 @@ export const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section className="w-screen  flex justify-center items-center bg-customDarkBg1 mb-[4vw] md:mb-[12vw] lg:mb-44 xl:mb-60 xll:mb-72 hero-bg-gradient"  id="home">
+    <section
+      className="w-screen  flex justify-center items-center bg-customDarkBg1 mb-[4vw] md:mb-[12vw] lg:mb-44 xl:mb-60 xll:mb-72 hero-bg-gradient"
+      id="home"
+    >
       <div className="w-full md:w-[800px] xl:w-[900px] flex flex-col justify-center items-center pt-16 text-center">
         <motion.div
           initial={{ opacity: 0, y: 10 }}

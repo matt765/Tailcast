@@ -1,8 +1,8 @@
+import { motion, AnimatePresence } from "framer-motion";
+
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 import { CloseIcon } from "../assets/icons/CloseIcon";
 import { TailcastLogo } from "../assets/logos/TailcastLogo";
-
-import { motion, AnimatePresence } from "framer-motion";
 
 export const InvitationModal = ({ setIsOpen }) => (
   <AnimatePresence>

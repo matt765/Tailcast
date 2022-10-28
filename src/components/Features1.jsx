@@ -1,17 +1,17 @@
+import { motion } from "framer-motion";
+
 import feature1 from "../assets/images/feature1.jpg";
 import feature2 from "../assets/images/feature2.jpg";
 import feature3 from "../assets/images/feature3.jpg";
 import feature4 from "../assets/images/feature4.jpg";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
-import { motion } from "framer-motion";
-
 export const Features1 = () => {
   return (
     <section
       className="w-full bg-customDarkBg2 mt-20 mb-8 sm:my-20 pt-[2rem] xs:pt-[6rem] md:pt-[12vw] lg:pt-44 
     "
-    id="features"
+      id="features"
     >
       <motion.div
         initial={{ opacity: 0 }}
