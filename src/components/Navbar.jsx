@@ -14,10 +14,10 @@ export const Navbar = () => {
     <nav className="w-full h-20 flex flex-col justify-center items-center fixed bg-customDarkBg1 lg:bg-customDarkBgTransparent z-40 lg:backdrop-blur-xl">
       <div className="2xl:w-[1280px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
         <div className="flex justify-start items-center grow basis-0">
-          <div className="dark:text-white mr-2 text-6xl">
+          <div className="text-white mr-2 text-6xl">
             <TailcastLogo />
           </div>
-          <div className="dark:text-white font-['Inter'] font-bold text-xl">
+          <div className="text-white font-['Inter'] font-bold text-xl">
             Tailcast
           </div>
         </div>
@@ -38,7 +38,7 @@ export const Navbar = () => {
             FAQ
           </a>
         </div>
-        <div class="grow basis-0 justify-end hidden lg:flex">
+        <div className="grow basis-0 justify-end hidden lg:flex">
           <a
             className="text-white custom-border-gray rounded-xl
            bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"

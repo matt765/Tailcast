@@ -14,7 +14,7 @@ export const Pricing = () => {
 
   return (
     <section className="w-screen flex justify-center bg-customDarkBg2 relative">
-      <div class="absolute -top-16" id="pricing" />
+      <div className="absolute -top-16" id="pricing" />
       <div className="pb-20 pt-12 bg-customDarkBg2  2xl:w-[1150px] lg:w-[1050px]  md:w-4/5 ">
         <motion.div
           initial={{ opacity: 0 }}

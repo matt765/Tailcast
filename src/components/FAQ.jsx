@@ -2,8 +2,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 export const FAQ = () => (
-  <section class="relative pt-16 pb-16 bg-blueGray-50 overflow-hidden">
-    <div class="absolute -top-10" id="FAQ" />
+  <section className="relative pt-16 pb-16 bg-blueGray-50 overflow-hidden">
+    <div className="absolute -top-10" id="FAQ" />
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
@@ -11,20 +11,20 @@ export const FAQ = () => (
       transition={{ duration: 0.5, delay: 0.2 }}
     >
       <img
-        class="absolute bottom-0 left-1/2 transform -translate-x-1/2"
+        className="absolute bottom-0 left-1/2 transform -translate-x-1/2"
         src="flaro-assets/images/faqs/gradient.svg"
         alt=""
       />
-      <div class="relative z-10 container px-2 sm:px-8 lg:px-4 mx-auto w-11/12 sm:w-full">
-        <div class="md:max-w-4xl mx-auto">
-          <p class="mb-7 custom-block-subtitle text-center">
+      <div className="relative z-10 container px-2 sm:px-8 lg:px-4 mx-auto w-11/12 sm:w-full">
+        <div className="md:max-w-4xl mx-auto">
+          <p className="mb-7 custom-block-subtitle text-center">
             Have any questions?
           </p>
-          <h2 class="mb-16 custom-block-big-title text-center">
+          <h2 className="mb-16 custom-block-big-title text-center">
             Frequently Asked Questions
           </h2>
-          <div class="mb-11 flex flex-wrap -m-1">
-            <div class="w-full p-1">
+          <div className="mb-11 flex flex-wrap -m-1">
+            <div className="w-full p-1">
               <FAQBox
                 title="Do you provide any free plan?"
                 content="Lorem ipsum dolor sit amet, to the consectr adipiscing elit.
@@ -36,7 +36,7 @@ export const FAQ = () => (
                 defaultOpen
               />
             </div>
-            <div class="w-full p-1">
+            <div className="w-full p-1">
               <FAQBox
                 title="How to claim your 25% discount offer?"
                 content="Lorem ipsum dolor sit amet, to the consectr adipiscing elit.
@@ -45,14 +45,14 @@ export const FAQ = () => (
               Volutpat tempor to the condi mentum vitae vel purus."
               />
             </div>
-            <div class="w-full p-1">
+            <div className="w-full p-1">
               <FAQBox
                 title="What&rsquo;s your refund policy?"
                 content="Lorem ipsum dolor sit amet, to the consectr adipiscing elit.
               Volutpat tempor to the condi mentum vitae vel purus."
               />
             </div>
-            <div class="w-full p-1">
+            <div className="w-full p-1">
               <FAQBox
                 title="How to get support for the product?"
                 content=" Lorem ipsum dolor sit amet, to the consectr adipiscing elit.
@@ -77,11 +77,11 @@ const FAQBox = ({ defaultOpen, title, content }) => {
 
   return (
     <div
-      class="pt-2 sm:pt-6 pb-2 px-3 sm:px-8  rounded-3xl bg-customDarkBg3 custom-border-gray-darker mb-4 relative hover:bg-customDarkBg3Hover cursor-pointer"
+      className="pt-2 sm:pt-6 pb-2 px-3 sm:px-8  rounded-3xl bg-customDarkBg3 custom-border-gray-darker mb-4 relative hover:bg-customDarkBg3Hover cursor-pointer"
       onClick={() => setIsOpen(!isOpen)}
     >
-      <div class="flex flex-col p-2  justify-center items-start">
-        <h3 class=" custom-content-title pt-3 sm:pt-0 pr-8 sm:pr-0">{title}</h3>
+      <div className="flex flex-col p-2  justify-center items-start">
+        <h3 className=" custom-content-title pt-3 sm:pt-0 pr-8 sm:pr-0">{title}</h3>
         <p
           className={`text-customGrayText pt-4 transition-all duration-300 overflow-hidden ${
             isOpen ? "max-h-96" : "max-h-0"
@@ -90,7 +90,7 @@ const FAQBox = ({ defaultOpen, title, content }) => {
           {content}
         </p>
       </div>
-      <div class="absolute top-6 right-4 sm:top-8 sm:right-8">
+      <div className="absolute top-6 right-4 sm:top-8 sm:right-8">
         <svg
           width="28px"
           height="30px"

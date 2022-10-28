@@ -9,7 +9,7 @@ export const FeaturesDiagonal = () => {
 
   return (
     <section className="lg:mb-16 w-full flex flex-col justify-center items-center bg-customDarkBg1">
-      <div class="custom-shape-divider-bottom-1665696614">
+      <div className="custom-shape-divider-bottom-1665696614">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
@@ -58,7 +58,7 @@ export const FeaturesDiagonal = () => {
           </div>
         </div>
       </motion.div>
-      <div class="custom-shape-divider-top-1665696661 w-full">
+      <div className="custom-shape-divider-top-1665696661 w-full">
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"

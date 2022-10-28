@@ -3,7 +3,7 @@ export const SpotifyLogo = () => (
     width="107"
     height="32"
     viewBox="0 0 107 32"
-    class="dark:fill-[rgb(174,178,183)] fill-black lg:ml-2"
+    className="fill-[rgb(174,178,183)] fill-black lg:ml-2"
     xmlns="http://www.w3.org/2000/svg"
   >
     <g clip-path="url(#clip0)">

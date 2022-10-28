@@ -11,10 +11,10 @@ export const Footer = () => {
           <div className="flex flex-wrap">
             <div className="w-full lg:w-1/3 mb-16 lg:mb-0">
               <div className="flex justify-center lg:justify-start items-center grow basis-0">
-                <div className="dark:text-white mr-2 text-6xl">
+                <div className="text-white mr-2 text-6xl">
                   <TailcastLogo />
                 </div>
-                <div className="dark:text-white font-['Inter'] font-bold text-xl">
+                <div className="text-white font-['Inter'] font-bold text-xl">
                   Tailcast
                 </div>
               </div>

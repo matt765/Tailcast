@@ -46,29 +46,29 @@ export const InvitationModal = ({ setIsOpen }) => (
             </div>
             <div className="w-full lg:w-1/2 flex items-center flex-col justify-center pt-24 sm:pt-0">
               <div className="flex inline lg:hidden justify-start items-center grow basis-0 mb-8 pr-6">
-                <div className="dark:text-white mr-2 text-8xl">
+                <div className="text-white mr-2 text-8xl">
                   <TailcastLogo />
                 </div>
-                <div className="dark:text-white font-['Inter'] font-bold text-3xl">
+                <div className="text-white font-['Inter'] font-bold text-3xl">
                   Tailcast
                 </div>
               </div>
 
-              <h3 class="mb-7 text-2xl text-white font-bold leading-snug text-center">
+              <h3 className="mb-7 text-2xl text-white font-bold leading-snug text-center">
                 Join 3,953 other developers
               </h3>
-              <div class="flex flex-wrap -m-2">
-                <div class="w-full sm:w-4/5 p-2 mx-auto">
+              <div className="flex flex-wrap -m-2">
+                <div className="w-full sm:w-4/5 p-2 mx-auto">
                   <input
-                    class="px-4 py-4 w-full text-gray-500 font-medium text-center placeholder-gray-500 outline-none border bg-gray-300 border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
+                    className="px-4 py-4 w-full text-gray-500 font-medium text-center placeholder-gray-500 outline-none border bg-gray-300 border-gray-300 rounded-lg focus:ring focus:ring-indigo-300"
                     id="newsletterInput3-1"
                     type="text"
                     placeholder="Your email address"
                   />
                 </div>
-                <div class="w-full sm:w-4/5 p-2 mt-4 mx-auto">
+                <div className="w-full sm:w-4/5 p-2 mt-4 mx-auto">
                   <button
-                    class="py-4 px-6 w-full text-white font-semibold rounded-xl shadow-4xl focus:ring focus:ring-indigo-300 bg-customPrimary hover:bg-[#7765e6] transition ease-in-out duration-200"
+                    className="py-4 px-6 w-full text-white font-semibold rounded-xl shadow-4xl focus:ring focus:ring-indigo-300 bg-customPrimary hover:bg-[#7765e6] transition ease-in-out duration-200"
                     type="button"
                   >
                     Join Now
