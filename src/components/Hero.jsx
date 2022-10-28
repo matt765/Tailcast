@@ -1,13 +1,14 @@
 import { useState } from "react";
-import dashboard from "../assets/images/dashboard.png";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
+
 import { InvitationModal } from "./InvitationModal";
+import dashboard from "../assets/images/dashboard.jpg";
 
 export const Hero = () => {
   const [isModalOpen, setIsModalOpen] = useState(false);
 
   return (
-    <section className="w-screen  flex justify-center items-center bg-customDarkBg1 mb-[4vw] md:mb-[12vw] lg:mb-44 xl:mb-60 xll:mb-72 hero-bg-gradient">
+    <section className="w-screen  flex justify-center items-center bg-customDarkBg1 mb-[4vw] md:mb-[12vw] lg:mb-44 xl:mb-60 xll:mb-72 hero-bg-gradient"  id="home">
       <div className="w-full md:w-[800px] xl:w-[900px] flex flex-col justify-center items-center pt-16 text-center">
         <motion.div
           initial={{ opacity: 0, y: 10 }}
@@ -15,7 +16,7 @@ export const Hero = () => {
           transition={{ duration: 0.5 }}
         >
           <div className="text-customSecondary text-sm sm:text-base  mb-6 sm:mt-32 mt-16  font-bold">
-            Introducing Design Data Platform
+            Discover new data flow
           </div>
         </motion.div>
         <motion.div
@@ -33,8 +34,9 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <div className="text-customGrayText text-sm sm:text-base mt-10 px-12">
-            Specify helps you unify your brand identity by collecting, storing
-            and distributing design tokens and assets — automatically. Lorem
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+            consequat laoreet lacinia. Phasellus pulvinar urna quis tempor
+            gravida. Sed commodo bibendum quis.
           </div>
         </motion.div>
         <motion.div

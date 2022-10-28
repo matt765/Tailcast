@@ -1,4 +1,4 @@
-export const RaystreamsLogo = () => (
+export const TailcastLogo = () => (
   <svg
     width="40"
     height="40"

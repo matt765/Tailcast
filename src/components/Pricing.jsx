@@ -13,7 +13,8 @@ export const Pricing = () => {
   };
 
   return (
-    <section className="w-screen flex justify-center bg-customDarkBg2">
+    <section className="w-screen flex justify-center bg-customDarkBg2 relative">
+      <div class="absolute -top-16" id="pricing" />
       <div className="pb-20 pt-12 bg-customDarkBg2  2xl:w-[1150px] lg:w-[1050px]  md:w-4/5 ">
         <motion.div
           initial={{ opacity: 0 }}
@@ -39,7 +40,7 @@ export const Pricing = () => {
                   checked={!isMonthly}
                   onChange={handleChange}
                 />
-                <span className="h-8 w-[5.5rem] flex items-center pr-2 bg-customDarkBg3 after:rounded-lg duration-300 ease-in-out  after:w-[30rem] after:h-10  after:bg-customPrimary hover:after:bg-[#7765e6]  after:shadow-md after:duration-300 peer-checked:after:translate-x-[5.5rem] cursor-pointer"></span>
+                <span className="h-8 w-[5.5rem] flex items-center pr-2 bg-customDarkBg3 after:rounded-lg duration-300 ease-in-out  after:w-[30rem] after:h-10  after:bg-customPrimary   after:shadow-md after:duration-300 peer-checked:after:translate-x-[5.5rem] cursor-pointer"></span>
                 <div className="flex absolute text-white text-sm font-bold">
                   <div
                     className={
@@ -69,7 +70,6 @@ export const Pricing = () => {
 
                   <p className="mt-4 mb-6 2xl:mb-14 text-gray-500 leading-loose text-left">
                     The perfect way to get started and get used to our tools.
-                    Lorem ipsum.
                   </p>
                   <ul className="mb-2 2xl:mb-6 text-white">
                     <li className="mb-4 flex">
@@ -116,7 +116,6 @@ export const Pricing = () => {
                   </div>
                   <p className="mt-8 mb-8 2xl:mb-16 text-gray-500 leading-loose text-left">
                     The perfect way to get started and get used to our tools.
-                    Lorem ipsum.
                   </p>
                   <ul className="mb-14 text-white">
                     <li className="mb-4 flex">
@@ -163,7 +162,6 @@ export const Pricing = () => {
                   </div>
                   <p className="mt-4 mb-6 2xl:mb-14 text-gray-500 leading-loose text-left">
                     The perfect way to get started and get used to our tools.
-                    Lorem ipsum.
                   </p>
                   <ul className="mb-2 2xl:mb-6 text-white">
                     <li className="mb-4 flex">

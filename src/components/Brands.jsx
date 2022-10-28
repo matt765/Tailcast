@@ -8,7 +8,7 @@ import { SpotifyLogo } from "../assets/logos/SpotifyLogo";
 import { StripeLogo } from "../assets/logos/StripeLogo";
 
 export const Brands = () => (
-  <section class="py-24 bg-customDarkBg1 w-full mt-16 mb-16">
+  <section class="py-12 sm:py-24 bg-customDarkBg1 w-full mt-16 mb-16">
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
@@ -27,7 +27,7 @@ export const Brands = () => (
               </h2>
             </div>
           </div>
-          <div class="w-11/12 sm:w-[620px] lg:w-1/2 mx-auto lg:mx-0 lg:pl-10">
+          <div class="w-2/3 sm:w-[620px] lg:w-1/2 mx-auto lg:mx-0 lg:pl-10">
             <div class="flex flex-wrap -m-4">
               <div class="w-1/2 sm:w-1/3 py-6 flex justify-center">
                 <AmazonLogo />

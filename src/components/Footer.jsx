@@ -1,6 +1,6 @@
 import { FacebookIcon } from "../assets/icons/FacebookIcon";
 import { InstagramIcon } from "../assets/icons/InstagramIcon";
-import { RaystreamsLogo } from "../assets/logos/RaystreamsLogo";
+import { TailcastLogo } from "../assets/logos/TailcastLogo";
 import { TwitterIcon } from "../assets/icons/TwitterIcon";
 
 export const Footer = () => {
@@ -12,15 +12,15 @@ export const Footer = () => {
             <div className="w-full lg:w-1/3 mb-16 lg:mb-0">
               <div className="flex justify-center lg:justify-start items-center grow basis-0">
                 <div className="dark:text-white mr-2 text-6xl">
-                  <RaystreamsLogo />
+                  <TailcastLogo />
                 </div>
                 <div className="dark:text-white font-['Inter'] font-bold text-xl">
-                  Spotify
+                  Tailcast
                 </div>
               </div>
               <p className="mb-10 mt-4 sm:w-[22rem] lg:w-[20rem] xl:w-[24rem] text-gray-400 leading-loose text-center lg:text-left mx-auto lg:mx-0">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus
-                tincidunt felis eu est.
+                Dashboard images were made using free Dark Admin dashboard  that you can find 
+                <a href="https://bootstrapious.com/p/bootstrap-4-dark-admin"  target="_blank" className="text-gray-100"> here.</a>
               </p>
               <div className="w-36 mx-auto lg:mx-0">
                 <a

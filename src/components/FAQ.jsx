@@ -2,7 +2,8 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 
 export const FAQ = () => (
-  <section class="relative pt-16 pb-16 bg-blueGray-50 overflow-hidden">
+  <section class="relative pt-16 pb-16 bg-blueGray-50 overflow-hidden" >
+    <div class="absolute -top-10" id="FAQ"/>
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
