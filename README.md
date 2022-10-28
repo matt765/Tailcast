@@ -1,12 +1,12 @@
 # Tailcast
 
-Dark themed Website built on AstroJ, with design suitable for saas/startup business.
+Dark themed Website built on AstroJS, with design suitable for saas/startup business.
 
-# Tech stack:
+## Tech stack:
 
 Astro, React, Tailwind, Framer Motion
 
-## 🚀 Project Structure
+##  Project Structure
 
 ```
 /
@@ -29,7 +29,7 @@ Astro, React, Tailwind, Framer Motion
 
 ```
 
-## 🧞 How to run
+##  How to run
 
 All commands are run from the root of the project, from a terminal:
 
