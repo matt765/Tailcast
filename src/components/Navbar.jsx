@@ -21,7 +21,7 @@ export const Navbar = () => {
             Tailcast
           </div>
         </div>
-        <div className="hidden lg:flex">
+        <div className="hidden lg:flex h-full">
           <a className="navbar-link" href="#home">
             Home
           </a>
@@ -106,26 +106,17 @@ export const Navbar = () => {
               >
                 FAQ
               </a>
-              <div>
-                <a
-                  className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
-                  href="#"
-                >
-                  <FacebookIcon />
-                </a>
-                <a
-                  className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
-                  href="#"
-                >
-                  <TwitterIcon />
-                </a>
-                <a
-                  className="inline-block w-10  h-10 mr-2 p-2 bg-customDarkBg2 custom-border-gray  hover:bg-gray-700 rounded-xl"
-                  href="#"
-                >
-                  <InstagramIcon />
-                </a>
-              </div>
+              <a
+                className="text-white custom-border-gray rounded-xl
+           bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
+                href="https://github.com/matt765/Tidestream"
+                target="_blank"
+              >
+                <GithubIcon />
+                Source code
+              </a>
+             
+            
             </div>
           </motion.div>
         )}
