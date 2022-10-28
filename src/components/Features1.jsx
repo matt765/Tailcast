@@ -9,8 +9,7 @@ import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 export const Features1 = () => {
   return (
     <section
-      className="w-full bg-customDarkBg2 mt-20 mb-8 sm:my-20 pt-[2rem] xs:pt-[6rem] md:pt-[12vw] lg:pt-44 
-    "
+      className="w-full bg-customDarkBg2 mt-20 mb-8 sm:my-20 pt-[2rem] xs:pt-[6rem] md:pt-[12vw] lg:pt-44"
       id="features"
     >
       <motion.div
@@ -26,7 +25,7 @@ export const Features1 = () => {
                 Dolor sit amet consectutar
               </span>
               <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
-                Unlike any tool used before
+                Unlike any tool you used before
               </h2>
               <p className="mb-10 text-customGrayText leading-loose">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit.
@@ -49,7 +48,6 @@ export const Features1 = () => {
               </ul>
             </div>
           </div>
-
           <div className="w-3/4 mx-auto lg:w-1/2 flex flex-wrap lg:-mx-4 sm:pr-8 lg:pt-10 justify-center lg:pl-4 xl:px-8">
             <div className="mb-8 lg:mb-0 w-full sm:w-1/2 px-2 lg:px-0">
               <div className="mb-4 py-3 pl-3 pr-2 rounded">

@@ -58,7 +58,6 @@ export const Navbar = () => {
           <div className="w-5 h-0.5 bg-gray-500 "></div>
         </div>
       </div>
-
       <AnimatePresence>
         {isOpen && (
           <motion.div

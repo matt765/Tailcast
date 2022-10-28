@@ -43,7 +43,6 @@ export const FAQ = () => (
               Volutpat tempor to the condi mentum vitae vel purus. Lorem
               ipsum dolor sit amet, to the consectr adipiscing elit.
               Volutpat tempor to the condi mentum vitae vel purus."
-                defaultOpen
               />
             </div>
             <div class="w-full p-1">
@@ -51,7 +50,6 @@ export const FAQ = () => (
                 title="What&rsquo;s your refund policy?"
                 content="Lorem ipsum dolor sit amet, to the consectr adipiscing elit.
               Volutpat tempor to the condi mentum vitae vel purus."
-                defaultOpen
               />
             </div>
             <div class="w-full p-1">
