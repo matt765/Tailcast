@@ -19,14 +19,16 @@ export const Navbar = () => {
           transition={{ duration: 0.3 }}
           exit={{ opacity: 0 }}
         >
-          <div className="flex justify-start items-center grow basis-0">
-            <div className="text-white mr-2 text-6xl">
-              <TailcastLogo />
+          <a className="navbar-link" href="#home" aria-label="Home">
+            <div className="flex justify-start items-center grow basis-0">
+              <div className="text-white mr-2 text-6xl">
+                <TailcastLogo />
+              </div>
+              <div className="text-white font-['Inter'] font-bold text-xl">
+                Tailcast
+              </div>
             </div>
-            <div className="text-white font-['Inter'] font-bold text-xl">
-              Tailcast
-            </div>
-          </div>
+          </a>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
