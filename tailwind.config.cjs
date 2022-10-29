@@ -19,8 +19,6 @@ module.exports = {
       },
       fontFamily: {
         Inter: "Inter",
-        Poppins: "Poppins",
-        Roboto: "Roboto",
       },
       screens: {
         xs: "530px",
