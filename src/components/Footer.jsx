@@ -25,6 +25,7 @@ export const Footer = () => {
                   href="https://bootstrapious.com/p/bootstrap-4-dark-admin"
                   target="_blank"
                   className="text-gray-100 ml-1.5 "
+                  aria-label="DarkAdmin"
                 >
                    here.
                 </a>
@@ -55,22 +56,22 @@ export const Footer = () => {
                 <h3 className="mb-6 text-2xl font-bold text-white">Products</h3>
                 <ul>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#">
+                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
                       Services
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#">
+                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
                       About Us
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#">
+                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
                       News and Stories
                     </a>
                   </li>
                   <li>
-                    <a className="text-gray-400 hover:text-gray-300" href="#">
+                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
                       Roadmap
                     </a>
                   </li>
@@ -82,32 +83,32 @@ export const Footer = () => {
                 </h3>
                 <ul>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#">
+                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
                       Organization Team
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#">
+                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
                       Our Journeys
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#">
+                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
                       Pricing Plans
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#">
+                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
                       Roadmap
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#">
+                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
                       Terms &amp; Conditions
                     </a>
                   </li>
                   <li>
-                    <a className="text-gray-400 hover:text-gray-300" href="#">
+                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
                       Privacy Policy
                     </a>
                   </li>
@@ -117,22 +118,22 @@ export const Footer = () => {
                 <h3 className="mb-6 text-2xl font-bold text-white">Company</h3>
                 <ul>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#">
+                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
                       About Us
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#">
+                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
                       Jobs
                     </a>
                   </li>
                   <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#">
+                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
                       Press
                     </a>
                   </li>
                   <li>
-                    <a className="text-gray-400 hover:text-gray-300" href="#">
+                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
                       Contact Us
                     </a>
                   </li>

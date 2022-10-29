@@ -9,7 +9,6 @@ Astro, React, Tailwind, Framer Motion
 ##  Project Structure
 
 ```
-
 ├── public/
 │   └── favicon.svg
 ├── src/
@@ -26,7 +25,6 @@ Astro, React, Tailwind, Framer Motion
 │   └── styles
 │
 └── package.json
-
 ```
 
 ##  How to run

@@ -13,42 +13,64 @@ export const Navbar = () => {
   return (
     <nav className="w-full h-20 flex flex-col justify-center items-center fixed bg-customDarkBg1 lg:bg-customDarkBgTransparent z-40 lg:backdrop-blur-xl">
       <div className="2xl:w-[1280px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
-        <div className="flex justify-start items-center grow basis-0">
-          <div className="text-white mr-2 text-6xl">
-            <TailcastLogo />
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+          exit={{ opacity: 0 }}
+        >
+          <div className="flex justify-start items-center grow basis-0">
+            <div className="text-white mr-2 text-6xl">
+              <TailcastLogo />
+            </div>
+            <div className="text-white font-['Inter'] font-bold text-xl">
+              Tailcast
+            </div>
           </div>
-          <div className="text-white font-['Inter'] font-bold text-xl">
-            Tailcast
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+          exit={{ opacity: 0 }}
+        >
+          <div className="hidden lg:flex h-full pl-12 pb-2">
+            <a className="navbar-link" href="#home" aria-label="Home">
+              Home
+            </a>
+            <a className="navbar-link" href="#features" aria-label="Features">
+              Features
+            </a>
+            <a className="navbar-link" href="#pricing" aria-label="Pricing">
+              Pricing
+            </a>
+            <a className="navbar-link" href="#feedback" aria-label="Feedback">
+              Feedback
+            </a>
+            <a className="navbar-link" href="#FAQ" aria-label="FAQ">
+              FAQ
+            </a>
           </div>
-        </div>
-        <div className="hidden lg:flex h-full">
-          <a className="navbar-link" href="#home">
-            Home
-          </a>
-          <a className="navbar-link" href="#features">
-            Features
-          </a>
-          <a className="navbar-link" href="#pricing">
-            Pricing
-          </a>
-          <a className="navbar-link" href="#feedback">
-            Feedback
-          </a>
-          <a className="navbar-link" href="#FAQ">
-            FAQ
-          </a>
-        </div>
-        <div className="grow basis-0 justify-end hidden lg:flex">
-          <a
-            className="text-white custom-border-gray rounded-xl
+        </motion.div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{ opacity: 1 }}
+          transition={{ duration: 0.3 }}
+          exit={{ opacity: 0 }}
+        >
+          <div className="grow basis-0 justify-end hidden lg:flex">
+            <a
+              className="text-white custom-border-gray rounded-xl
            bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-            href="https://github.com/matt765/Tidestream"
-            target="_blank"
-          >
-            <GithubIcon />
-            Source code
-          </a>
-        </div>
+              href="https://github.com/matt765/Tidestream"
+              target="_blank"
+              aria-label="source code"
+            >
+              <GithubIcon />
+              Source code
+            </a>
+          </div>
+        </motion.div>
         <div
           className="lg:hidden flex flex-col  px-2 py-3 border-solid border border-gray-600 rounded-md cursor-pointer hover:bg-customDarkBg2"
           onClick={() => setIsOpen(!isOpen)}
@@ -75,6 +97,7 @@ export const Navbar = () => {
                 className="navbar-link"
                 href="#home"
                 onClick={() => setIsOpen(false)}
+                aria-label="Home"
               >
                 Home
               </a>
@@ -82,6 +105,7 @@ export const Navbar = () => {
                 className="navbar-link"
                 href="#features"
                 onClick={() => setIsOpen(false)}
+                aria-label="sFeatures"
               >
                 Features
               </a>
@@ -89,6 +113,7 @@ export const Navbar = () => {
                 className="navbar-link"
                 href="#pricing"
                 onClick={() => setIsOpen(false)}
+                aria-label="Pricing"
               >
                 Pricing
               </a>
@@ -96,6 +121,7 @@ export const Navbar = () => {
                 className="navbar-link"
                 href="#feedback"
                 onClick={() => setIsOpen(false)}
+                aria-label="Feedback"
               >
                 Feedback
               </a>
@@ -103,6 +129,7 @@ export const Navbar = () => {
                 className="navbar-link"
                 href="#FAQ"
                 onClick={() => setIsOpen(false)}
+                aria-label="FAQ"
               >
                 FAQ
               </a>
@@ -115,8 +142,6 @@ export const Navbar = () => {
                 <GithubIcon />
                 Source code
               </a>
-             
-            
             </div>
           </motion.div>
         )}

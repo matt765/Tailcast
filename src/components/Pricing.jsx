@@ -68,7 +68,7 @@ export const Pricing = () => {
                     </div>
                   </div>
 
-                  <p className="mt-4 mb-6 2xl:mb-14 text-gray-500 leading-loose text-left">
+                  <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
                     The perfect way to get started and get used to our tools.
                   </p>
                   <ul className="mb-2 2xl:mb-6 text-white">
@@ -114,7 +114,7 @@ export const Pricing = () => {
                       {isMonthly ? "/ month" : "/ year"}
                     </div>
                   </div>
-                  <p className="mt-8 mb-8 2xl:mb-16 text-gray-500 leading-loose text-left">
+                  <p className="mt-8 mb-8 2xl:mb-12 text-gray-500 leading-loose text-left">
                     The perfect way to get started and get used to our tools.
                   </p>
                   <ul className="mb-14 text-white">
@@ -160,7 +160,7 @@ export const Pricing = () => {
                       {isMonthly ? "/ month" : "/ year"}
                     </div>
                   </div>
-                  <p className="mt-4 mb-6 2xl:mb-14 text-gray-500 leading-loose text-left">
+                  <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
                     The perfect way to get started and get used to our tools.
                   </p>
                   <ul className="mb-2 2xl:mb-6 text-white">

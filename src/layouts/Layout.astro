@@ -5,16 +5,6 @@ import "@fontsource/inter/600.css";
 import "@fontsource/inter/700.css";
 import "@fontsource/inter/800.css";
 import "@fontsource/inter/900.css";
-import "@fontsource/roboto";
-import "@fontsource/roboto/500.css";
-import "@fontsource/roboto/700.css";
-import "@fontsource/roboto/900.css";
-import "@fontsource/poppins/";
-import "@fontsource/poppins/500.css";
-import "@fontsource/poppins/600.css";
-import "@fontsource/poppins/700.css";
-import "@fontsource/poppins/800.css";
-import "@fontsource/poppins/900.css";
 
 export interface Props {
   title: string;
@@ -30,6 +20,10 @@ const { title } = Astro.props;
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
+    <meta
+      name="description"
+      content="TDark themed Website built on AstroJS, with design suitable for saas/startup business."
+    />
     <title>{title}</title>
   </head>
   <body>
@@ -48,11 +42,7 @@ const { title } = Astro.props;
         font-family: Inter;
         background-color: #26272b;
         overflow-x: hidden;
-        scroll-behavior: smooth
-      }
-      code {
-        font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-          DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
+        scroll-behavior: smooth;
       }
     </style>
   </body>
