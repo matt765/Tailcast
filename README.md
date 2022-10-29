@@ -1,6 +1,6 @@
 # Tailcast
 
-Dark themed website built on AstroJS, with design suitable for saas/startup business.
+Dark themed website built on AstroJS, designed for saas/startup business.
 
 ## Tech stack:
 
