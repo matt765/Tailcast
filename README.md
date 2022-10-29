@@ -6,6 +6,9 @@ Dark themed Website built on AstroJS, with design suitable for saas/startup busi
 
 Astro, React, Tailwind, Framer Motion
 
+## Live link
+[https://tailcastsite.netlify.app/](https://tailcastsite.netlify.app/)
+
 ##  Project Structure
 
 ```
