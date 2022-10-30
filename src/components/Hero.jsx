@@ -16,19 +16,14 @@ export const Hero = () => {
         <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
-        >
-          <div className="text-customSecondary text-sm sm:text-base  mb-6 sm:mt-32 mt-16  font-bold">
-            Discover new data flow
-          </div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, y: 10 }}
-          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.05 }}
         >
-          <div className="font-['Inter'] text-5xl sm:text-6xl lg:text-6xl xl:text-7xl font-bold tracking-wide  hero-title-gradient  px-12 sm:px-20 md:px-24 lg:px-28">
-            Turn your ideas into reality
+          <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide  text-white  px-8 sm:px-8 md:px-20 lg:px-4 mt-40">
+            <span className="inline md:hidden">Analytics</span>{" "}
+            <span className="hidden md:inline">Analytic tools suite</span>
+          </div>
+          <div className="mt-2 sm:mt-0 text-4xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide  text-customSecondary  px-8 sm:px-20 md:px-24 lg:px-24">
+            for developers
           </div>
         </motion.div>
         <motion.div
@@ -36,10 +31,9 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
         >
-          <div className="text-customGrayText text-sm sm:text-base mt-10 px-12">
+          <div className="text-customGrayText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-32">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            consequat laoreet lacinia. Phasellus pulvinar urna quis tempor
-            gravida. Sed commodo bibendum quis.
+            consequat laoreet lacinia. Phasellus pulvinars gravida.
           </div>
         </motion.div>
         <motion.div
@@ -47,9 +41,9 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.15 }}
         >
-          <div className="flex flex-col gap-6 sm:flex-row mt-14 mb-24 sm:mb-40 justify-center">
+          <div className="flex flex-col gap-2 sm:flex-row mt-14 mb-24 sm:mb-40 justify-center">
             <div
-              className="custom-button-colored w-80 sm:w-60 h-14 mr-0 sm:mr-10"
+              className="custom-button-colored w-80 sm:w-60 h-14 mr-0 sm:mr-4 lg:mr-10 mb-2 sm:mb-0"
               onClick={() => setIsModalOpen(true)}
             >
               Get Started
