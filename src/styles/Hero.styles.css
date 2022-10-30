@@ -7,7 +7,7 @@
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
-  height: 120px;
+  height: 200px;
 }
 .hero-title-gradient {
   background: -webkit-linear-gradient(white, #b4add1);
