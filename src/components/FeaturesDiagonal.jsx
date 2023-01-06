@@ -34,7 +34,7 @@ export const FeaturesDiagonal = () => {
             <span className="custom-block-subtitle">
               Dolor sit amet consectutar
             </span>
-            <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
+            <h2 className="mt-10 mb-8 text-4xl lg:text-5xl custom-block-big-title">
               Build &amp; Launch without problems
             </h2>
             <p className="mb-16 text-customGrayText leading-loose">

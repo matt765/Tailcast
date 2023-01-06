@@ -57,7 +57,7 @@ body, html {
 /* Buttons */
 
 .custom-button-colored {
- @apply rounded-xl font-bold bg-customPrimary text-white flex justify-center items-center hover:bg-[#7765e6] cursor-pointer transition
+ @apply rounded-lg font-bold bg-customPrimary text-white flex justify-center items-center hover:bg-[#7765e6] cursor-pointer transition
 }
 
 /* Preventing FOUC */
