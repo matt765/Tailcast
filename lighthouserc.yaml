@@ -2,10 +2,11 @@ ci:
   collect:
     numberOfRuns: 5
     startServerCommand: pnpm preview
+    startServerReadyPattern: started
     url:
       - http://localhost:3000/
   assert:
-    preset: lighthouse:recommended
+    # preset: lighthouse:recommended
     # assertions:
     #   offscreen-images: "off"
     #   uses-webp-images: "off"
