@@ -2,7 +2,9 @@ name: CI
 on:
   pull_request:
     types: [opened, reopened, synchronize]
-
+env:
+  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+  LHCI_UPLOAD___TOKEN: ${{ secrets.LHCI_UPLOAD___TOKEN }}
 jobs:
   lhci:
     name: Lighthouse
@@ -43,6 +45,3 @@ jobs:
           pnpm build
       - name: run Lighthouse CI
         run: pnpm lhci autorun
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          LHCI_UPLOAD___TOKEN: ${{ secrets.LHCI_UPLOAD___TOKEN }}
