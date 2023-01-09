@@ -3,14 +3,13 @@ on:
   pull_request:
     types: [opened, reopened, synchronize]
 
-env:
-  GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-  LHCI_UPLOAD___TOKEN: ${{ secrets.LHCI_UPLOAD___TOKEN }}
-
 jobs:
   lhci:
     name: Lighthouse
     runs-on: ubuntu-latest
+    env:
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      LHCI_UPLOAD___TOKEN: ${{ secrets.LHCI_UPLOAD___TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v3
