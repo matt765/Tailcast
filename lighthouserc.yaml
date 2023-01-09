@@ -1,0 +1,24 @@
+ci:
+  collect:
+    numberOfRuns: 5
+    startServerCommand: pnpm preview
+    url:
+      - http://localhost:3000/
+  assert:
+    preset: lighthouse:recommended
+    # assertions:
+    #   offscreen-images: "off"
+    #   uses-webp-images: "off"
+    #   color-contrast: "off"
+    #   first-contentful-paint:
+    #     - error
+    #     - maxNumericValue: 2000
+    #       aggregationMethod: optimistic
+    #   interactive:
+    #     - error
+    #     - maxNumericValue: 5000
+    #       aggregationMethod: optimistic
+  upload:
+    target: lhci
+    serverBaseUrl: https://lhci.krugweb.services
+    # token: 5942f5fa-c3ac-4d4f-9d80-8810ee767437

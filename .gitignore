@@ -3,7 +3,7 @@ dist/
 .output/
 
 # dependencies
-node_modules/
+*node_modules/
 
 # logs
 npm-debug.log*
@@ -18,3 +18,5 @@ pnpm-debug.log*
 
 # macOS-specific files
 .DS_Store
+
+.lighthouseci/*

@@ -1,0 +1,44 @@
+name: CI
+pull_request:
+  types: [opened, reopened, synchronize]
+
+jobs:
+  lhci:
+    name: Lighthouse
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+          ref: ${{ github.event.pull_request.head.sha }}
+      - uses: "actions/setup-node@v3"
+        with:
+          node-version-file: ".nvmrc"
+          # cache: "pnpm"
+          # cache-dependency-path: "**/pnpm-lock.yaml"
+      - run: corepack enable
+      - uses: pnpm/action-setup@v2
+        with:
+          version: 7.22.0
+          run_install: false
+
+      - name: Get pnpm store directory
+        id: pnpm-cache
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path)" >> $GITHUB_OUTPUT
+
+      - uses: actions/cache@v3
+        name: Setup pnpm cache
+        with:
+          path: ${{ steps.pnpm-cache.outputs.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-store-
+      - name: pnpm install, build
+        run: |
+          pnpm install
+          pnpm build
+      - name: run Lighthouse CI
+        run: pnpm lhci autorun
