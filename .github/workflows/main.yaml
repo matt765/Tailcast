@@ -1,7 +1,7 @@
 name: CI
-on:
-  pull_request:
-    types: [opened, reopened, synchronize]
+
+on: [push]
+
 env:
   GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
   LHCI_UPLOAD___TOKEN: ${{ secrets.LHCI_UPLOAD__TOKEN }}
