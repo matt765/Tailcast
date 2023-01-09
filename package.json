@@ -8,11 +8,13 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "lhci": "lhci"
   },
   "dependencies": {
     "@astrojs/tailwind": "^2.0.2",
     "@fontsource/inter": "^4.5.14",
+    "@lhci/cli": "^0.10.0",
     "astro": "^1.4.4",
     "framer-motion": "^7.6.1",
     "tailwindcss": "^3.1.8"
