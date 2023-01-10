@@ -52,3 +52,4 @@ jobs:
           urls: "https://example.com/"
           serverBaseUrl: ${{ secrets.LHCI_SERVER_URL }}
           serverToken: ${{ secrets.LHCI_UPLOAD__TOKEN }}
+          uploadArtifacts: true
