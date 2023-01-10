@@ -50,5 +50,5 @@ jobs:
         uses: treosh/lighthouse-ci-action@v9
         with:
           urls: "https://example.com/"
-          # serverBaseUrl: ${{ secrets.LHCI_SERVER_URL }}
+          serverBaseUrl: ${{ secrets.LHCI_SERVER_URL }}
           serverToken: ${{ secrets.LHCI_UPLOAD__TOKEN }}
