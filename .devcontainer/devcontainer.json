@@ -1,0 +1,24 @@
+{
+  "image": "mcr.microsoft.com/devcontainers/universal:2",
+  "features": {
+    
+    "ghcr.io/devcontainers-contrib/features/amplify-cli:2": {
+      "version":"latest"}
+    
+        "ghcr.io/devcontainers/features/aws-cli:1": {
+"version":"latest"}
+    
+    "ghcr.io/devcontainers-contrib/features/aws-cdk:2":  {
+"version":"latest"}
+    
+    "ghcr.io/devcontainers-contrib/features/aws-cdk:2":  {
+"version":"latest"}
+    
+    "ghcr.io/customink/codespaces-features/sam-cli:1": {
+"version":"latest"}
+    
+    "ghcr.io/astronomer/devcontainer-features/astro-cli:1": {
+    "version":"latest"}
+"ghcr.io/astronomer/devcontainer-features/astro-cli:1": {}
+  }
+}
