@@ -22,22 +22,13 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <meta
       name="description"
-      content="TDark themed Website built on AstroJS, with design suitable for saas/startup business."
+      content="Dark themed website template built on AstroJS, designed for technological startup business."
     />
     <title>{title}</title>
   </head>
   <body>
     <slot />
     <style is:global>
-      :root {
-        --accent: 124, 58, 237;
-        --accent-gradient: linear-gradient(
-          45deg,
-          rgb(var(--accent)),
-          #da62c4 30%,
-          white 60%
-        );
-      }
       html {
         font-family: Inter;
         background-color: #26272b;

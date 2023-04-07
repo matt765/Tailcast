@@ -77,7 +77,7 @@ export const InvitationModal = ({ setIsOpen }) => (
               </div>
             </div>
             <div
-              className="fixed top-4 right-4 z-50 w-4 h-4 cursor-pointer"
+              className="fixed top-6 right-6 z-50 w-5 h-5 cursor-pointer"
               onClick={() => setIsOpen(false)}
             >
               <CloseIcon />

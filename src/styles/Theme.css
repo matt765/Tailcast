@@ -45,7 +45,6 @@ body, html {
   border-style: solid;
   border-width: 1px;
   border-color: rgb(255, 255, 255, 0.07);
-
 }
 .custom-border-gray-nobottom {
   border-style: solid;
@@ -57,10 +56,17 @@ body, html {
 /* Buttons */
 
 .custom-button-colored {
- @apply rounded-lg font-bold bg-customPrimary text-white flex justify-center items-center hover:bg-[#7765e6] cursor-pointer transition
+ @apply rounded-lg font-bold bg-customPrimary text-white flex justify-center items-center hover:bg-[#7274f3] cursor-pointer transition
+}
+
+/* Navbar */
+
+.navbar-link {
+  @apply text-white lg:text-base text-2xl  leading-6 mr-4 ml-4   2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2
 }
 
 /* Preventing FOUC */
 @font-face {
   font-display: var(--fontsource-Inter-font-display, optional);
 }
+

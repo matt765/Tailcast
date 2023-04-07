@@ -1,3 +1,0 @@
-.navbar-link {
-  @apply text-white lg:text-base text-2xl  leading-6 mr-4 ml-4   2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-125 transition duration-300 h-full pt-2
-}

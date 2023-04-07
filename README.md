@@ -1,6 +1,6 @@
 # Tailcast
 
-Dark themed website template built on AstroJS, designed for saas/startup business.
+Dark themed website template built on AstroJS, designed for technological startup business.
 
 ## Tech stack:
 
