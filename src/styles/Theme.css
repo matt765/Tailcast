@@ -13,60 +13,50 @@
   @apply text-white text-lg font-bold tracking-normal;
 }
 .custom-content-text-white {
-  @apply text-white text-base leading-relaxed
+  @apply text-white text-base leading-relaxed;
 }
 .custom-content-text-gray {
-  @apply text-gray-400 text-base
+  @apply text-gray-400 text-base;
 }
 
 /* Backgrounds */
 
 .custom-bg-dark1 {
-  @apply bg-customDarkBg1  fill-customDarkBg1
+  @apply bg-customDarkBg1  fill-customDarkBg1;
 }
 .custom-bg-dark2 {
-  @apply bg-customDarkBg2  fill-customDarkBg2
+  @apply bg-customDarkBg2  fill-customDarkBg2;
 }
 .custom-bg-dark3 {
-  @apply bg-customDarkBg3  fill-customDarkBg3
+  @apply bg-customDarkBg3  fill-customDarkBg3;
 }
-body, html {
-  @apply bg-customDarkBg2
+body,
+html {
+  @apply bg-customDarkBg2;
 }
 
 /* Borders */
 
 .custom-border-gray {
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(255, 255, 255, 0.15);  
+  @apply border border-solid border-[rgb(255,255,255,0.15)];
 }
 .custom-border-gray-darker {
-  border-style: solid;
-  border-width: 1px;
-  border-color: rgb(255, 255, 255, 0.07);
-}
-.custom-border-gray-nobottom {
-  border-style: solid;
-  border-width: 1px 1px 0 1px;
-  border-color: rgb(255, 255, 255, 0.1);
-  border-radius: "10px";
+  @apply border border-solid border-[rgb(255,255,255,0.07)];
 }
 
 /* Buttons */
 
 .custom-button-colored {
- @apply rounded-lg font-bold bg-customPrimary text-white flex justify-center items-center hover:bg-[#7274f3] cursor-pointer transition
+  @apply rounded-lg font-bold bg-customPrimary text-white flex justify-center items-center hover:bg-[#7274f3] cursor-pointer transition;
 }
 
 /* Navbar */
 
 .navbar-link {
-  @apply text-white lg:text-base text-2xl  leading-6 mr-4 ml-4   2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2
+  @apply text-white lg:text-base text-2xl  leading-6 mr-4 ml-4   2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2;
 }
 
 /* Preventing FOUC */
 @font-face {
   font-display: var(--fontsource-Inter-font-display, optional);
 }
-

@@ -39,7 +39,7 @@ export const ScrollUpButton = () => {
           >
             <path
               d="M4.16732 12.5L10.0007 6.66667L15.834 12.5"
-              stroke="#4F46E5"
+              stroke="rgb(99, 102, 241)"
               strokeWidth="2"
               strokeLinecap="round"
               strokeLinejoin="round"
