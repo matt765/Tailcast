@@ -10,21 +10,21 @@ const testimonialsData = [
     customerName: "John Watkins",
     customerTitle: "Founder of Dashflow",
     content:
-      "Lorem ipsum dolor sit amet, consecte adipiscing elit. Phasellus pulvinar urna quis tempor gravida. Sed commodo bibendum orci, sed tincidunt lectus dignissim vel. Sed et maximus odio, eu ultrices magna. Etiam finibus tempor eu nunc vitae tristique. Cras mattis sapien. Etiam finibus gravida.",
+      "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
     image: testimonial1,
   },
   {
     customerName: "John Watkins",
     customerTitle: "Founder of Dashflow",
     content:
-      "Lorem ipsum dolor sit amet, consecte adipiscing elit. Phasellus pulvinar urna quis tempor gravida. Sed commodo bibendum orci, sed tincidunt lectus dignissim vel. Sed et maximus odio, eu ultrices magna. Etiam finibus tempor eu nunc vitae tristique. Cras mattis sapien. Etiam finibus gravida.",
+      "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
     image: testimonial2,
   },
   {
     customerName: "John Watkins",
     customerTitle: "Founder of Dashflow",
     content:
-      "Lorem ipsum dolor sit amet, consecte adipiscing elit. Phasellus pulvinar urna quis tempor gravida. Sed commodo bibendum orci, sed tincidunt lectus dignissim vel. Sed et maximus odio, eu ultrices magna. Etiam finibus tempor eu nunc vitae tristique. Cras mattis sapien. Etiam finibus gravida.",
+      "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
     image: testimonial3,
   },
 ];
@@ -40,7 +40,7 @@ export const Testimonials = () => (
         transition={{ duration: 0.4, delay: 0.3 }}
       >
         <div className="custom-block-subtitle text-center mb-6">
-          Lorem Ipsum
+          Testimonials
         </div>
         <div className="custom-block-big-title text-center mb-16 px-8 sm:px-24 md:px-48">
           People like you love Tailcast

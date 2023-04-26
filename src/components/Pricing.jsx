@@ -5,11 +5,11 @@ import { InvitationModal } from "./InvitationModal";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
 const pricingData = [
-  "Vestibulum viverra",
-  "Morbi mollis metus pretium",
-  "Etiam lectus nunc, commodo",
-  "Ut quam nisl mollis id pretium",
-  "Suspendisse bibendum",
+  "Seamless integration",
+  "Real-time data visualization",
+  "Advanced predictive analytics",
+  "Collaborative environment",
+  "Responsive customer support",
 ];
 
 export const Pricing = () => {
@@ -33,13 +33,14 @@ export const Pricing = () => {
           <div className="container mx-auto px-4">
             <div className="max-w-2xl mx-auto text-center mb-16">
               <span className="custom-block-subtitle">
-                Dolor sit amet consectutar
+                Find Your Perfect Fit
               </span>
               <h2 className="mt-6 mb-6 text-4xl lg:text-5xl font-bold font-heading text-white">
                 Choose your best plan
               </h2>
               <p className="mb-6 text-customGrayText">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Select the plan that suits your needs and benefit from our
+                analytics tools.
               </p>
               <label className="mx-auto bg-customDarkBg3 relative flex justify-between items-center group text-xl w-44 h-12 rounded-lg pr-36 pl-1 cursor-pointer">
                 <input
@@ -109,7 +110,7 @@ export const Pricing = () => {
                     </div>
                   </div>
                   <p className="mt-8 mb-8 2xl:mb-12 text-gray-500 leading-loose text-left">
-                    The perfect way to get started and get used to our tools.
+                    Unlock more features and elevate your data analysis.
                   </p>
                   <ul className="mb-14 text-white">
                     {pricingData.map((text, index) => (
@@ -141,7 +142,7 @@ export const Pricing = () => {
                     </div>
                   </div>
                   <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
-                    The perfect way to get started and get used to our tools.
+                    Experience the full power of our  analytic platform
                   </p>
                   <ul className="mb-2 2xl:mb-6 text-white">
                     {pricingData.map((text, index) => (

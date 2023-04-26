@@ -41,8 +41,7 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <div className="text-customGrayText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48 ">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
-            consequat laoreet lacinia. Phasellus 
+          Experience seamless business integrations and powerful insights with our analytic cutting-edge tools. 
           </div>
         </motion.div>
         <motion.div

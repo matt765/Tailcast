@@ -21,29 +21,27 @@ export const Features1 = () => {
         <div className="flex flex-wrap items-center 2xl:w-[1450px] xl:w-[1300px] w-11/12 mx-auto md:pl-4 xl:pr-16 xl:pl-16">
           <div className="w-full lg:w-1/2 mb-12 lg:mb-0">
             <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
-              <span className="custom-block-subtitle">
-                Dolor sit amet consectutar
-              </span>
+              <span className="custom-block-subtitle">Embrace Innovation</span>
               <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
                 Unlike any tool you used before
               </h2>
               <p className="mb-10 text-customGrayText leading-loose">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                Pellentesque efficitur nisl sodales egestas lobortis. Lorem
-                ipsum dolor sit amet, consectetur adipiscing elit.
+                Experience a new level of data analysis with our innovative and
+                user-friendly platform. Transform your business needs with actionable
+                insights.
               </p>
               <ul className="mb-6 text-white">
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Vestibulum viverra</span>
+                  <span>Real-time data visualization</span>
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Morbi mollis metus pretium</span>
+                  <span>Advanced predictive analytics</span>
                 </li>
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
-                  <span>Etiam lectus nunc, commodo</span>
+                  <span>Seamless integration with APIs</span>
                 </li>
               </ul>
             </div>
