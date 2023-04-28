@@ -3,6 +3,28 @@ import { InstagramIcon } from "../assets/icons/InstagramIcon";
 import { TailcastLogo } from "../assets/logos/TailcastLogo";
 import { TwitterIcon } from "../assets/icons/TwitterIcon";
 
+const footerData = [
+  {
+    title: "Products",
+    items: ["Services", "About Us", "News and Stories", "Roadmap"],
+  },
+  {
+    title: "Important Links",
+    items: [
+      "Organization Team",
+      "Our Journeys",
+      "Pricing Plans",
+      "Roadmap",
+      "Terms & Conditions",
+      "Privacy Policy",
+    ],
+  },
+  {
+    title: "Company",
+    items: ["About Us", "Jobs", "Press", "Contact Us"],
+  },
+];
+
 export const Footer = () => {
   return (
     <footer>
@@ -20,14 +42,14 @@ export const Footer = () => {
               </div>
               <p className="mb-10 mt-4 sm:w-[22rem] lg:w-[20rem] xl:w-[24rem] text-gray-400 leading-loose text-center lg:text-left mx-auto lg:mx-0">
                 Dashboard images were made using free Dark Admin dashboard that
-                you can find 
+                you can find
                 <a
                   href="https://bootstrapious.com/p/bootstrap-4-dark-admin"
                   target="_blank"
                   className="text-gray-100 ml-1.5 "
                   aria-label="DarkAdmin"
                 >
-                   here.
+                  here.
                 </a>
               </p>
               <div className="w-36 mx-auto lg:mx-0">
@@ -55,26 +77,17 @@ export const Footer = () => {
               <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">
                 <h3 className="mb-6 text-2xl font-bold text-white">Products</h3>
                 <ul>
-                  <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
-                      Services
-                    </a>
-                  </li>
-                  <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
-                      About Us
-                    </a>
-                  </li>
-                  <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
-                      News and Stories
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
-                      Roadmap
-                    </a>
-                  </li>
+                  {footerData[0].items.map((item, i) => (
+                    <li key={i} className="mb-4">
+                      <a
+                        className="text-gray-400 hover:text-gray-300"
+                        href="#"
+                        aria-label=""
+                      >
+                        {item}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">
@@ -82,61 +95,33 @@ export const Footer = () => {
                   Important Links
                 </h3>
                 <ul>
-                  <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
-                      Organization Team
-                    </a>
-                  </li>
-                  <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
-                      Our Journeys
-                    </a>
-                  </li>
-                  <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
-                      Pricing Plans
-                    </a>
-                  </li>
-                  <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
-                      Roadmap
-                    </a>
-                  </li>
-                  <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
-                      Terms &amp; Conditions
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
-                      Privacy Policy
-                    </a>
-                  </li>
+                  {footerData[1].items.map((item, i) => (
+                    <li key={i} className="mb-4">
+                      <a
+                        className="text-gray-400 hover:text-gray-300"
+                        href="#"
+                        aria-label=""
+                      >
+                        {item}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
               <div className="w-full md:w-1/3 lg:w-auto">
                 <h3 className="mb-6 text-2xl font-bold text-white">Company</h3>
                 <ul>
-                  <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
-                      About Us
-                    </a>
-                  </li>
-                  <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
-                      Jobs
-                    </a>
-                  </li>
-                  <li className="mb-4">
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
-                      Press
-                    </a>
-                  </li>
-                  <li>
-                    <a className="text-gray-400 hover:text-gray-300" href="#" aria-label="" >
-                      Contact Us
-                    </a>
-                  </li>
+                  {footerData[2].items.map((item, i) => (
+                    <li key={i} className="mb-4">
+                      <a
+                        className="text-gray-400 hover:text-gray-300"
+                        href="#"
+                        aria-label=""
+                      >
+                        {item}
+                      </a>
+                    </li>
+                  ))}
                 </ul>
               </div>
             </div>

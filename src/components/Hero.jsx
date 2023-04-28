@@ -27,7 +27,7 @@ export const Hero = () => {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.05 }}
         >
-          <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide  text-white  px-8 sm:px-8 md:px-20 lg:px-4" >
+          <div className="text-5xl sm:text-6xl lg:text-7xl xl:text-7xl font-bold tracking-wide  text-white  px-8 sm:px-8 md:px-20 lg:px-4">
             <span className="inline md:hidden">Analytics</span>
             <span className="hidden md:inline">Analytic tools suite</span>
           </div>
@@ -41,7 +41,8 @@ export const Hero = () => {
           transition={{ duration: 0.5, delay: 0.1 }}
         >
           <div className="text-customGrayText text-sm lg:text-base xl:text-lg sm:text-base mt-10 px-12 sm:px-48 ">
-          Experience seamless business integrations and powerful insights with our analytic cutting-edge tools. 
+            Experience seamless business integrations and powerful insights with
+            our cutting-edge analytic tools.
           </div>
         </motion.div>
         <motion.div
