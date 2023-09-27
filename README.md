@@ -39,4 +39,4 @@ All commands are run from the root of the project, from a terminal:
 
 ## How to run in GitPod
 
-[![Run in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/fkromer/Tailcast)
+[![Run in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/matt765/Tailcast)
