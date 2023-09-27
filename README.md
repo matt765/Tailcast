@@ -37,3 +37,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run build`        | Build your production site to `./dist/`            |
 | `npm run preview`      | Preview your build locally, before deploying       |
 
+## How to deploy via GitHub pages
+
+Follow the instructions about how to [Deploy your Astro Site to GitHub Pages](https://docs.astro.build/en/guides/deploy/github/#how-to-deploy).
