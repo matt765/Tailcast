@@ -26,7 +26,7 @@ Astro, React, Tailwind, Framer Motion
 └── package.json
 ```
 
-##  How to run
+##  How to run locally
 
 All commands are run from the root of the project, from a terminal:
 
@@ -37,3 +37,6 @@ All commands are run from the root of the project, from a terminal:
 | `npm run build`        | Build your production site to `./dist/`            |
 | `npm run preview`      | Preview your build locally, before deploying       |
 
+## How to run in GitPod
+
+[![Run in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/fkromer/Tailcast)
