@@ -1,31 +1,21 @@
 import { motion } from "framer-motion";
-
 import { QuoteIcon } from "../assets/icons/QuoteIcon";
-import testimonial1 from "../assets/images/testimonial1.png";
-import testimonial2 from "../assets/images/testimonial2.png";
-import testimonial3 from "../assets/images/testimonial3.png";
 
 const testimonialsData = [
   {
-    customerName: "John Watkins",
-    customerTitle: "Founder of Dashflow",
-    content:
-      "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
-    image: testimonial1,
+    customerName: "John Smith",
+    customerTitle: "Founder of Barnett Exploration",
+    content: "LettersIQ has been a game-changer for our compliance management. The real-time notifications and comprehensive monitoring have helped us stay ahead of potential issues and avoid costly severance actions. The report is very easy to parse through and see what's relevant, and the peace of mind it provides is invaluable.",
   },
   {
-    customerName: "John Watkins",
-    customerTitle: "Founder of Dashflow",
-    content:
-      "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
-    image: testimonial2,
+    customerName: "Michael Thompson",
+    customerTitle: "Head of Regulatory",
+    content: "Since implementing LettersIQ, we've streamlined our compliance processes and significantly reduced the risk of violations. The detailed reports and customizable alerts keep us informed and in control. It's a must-have tool for any operator looking to maintain compliance and protect their operations.",
   },
   {
-    customerName: "John Watkins",
-    customerTitle: "Founder of Dashflow",
-    content:
-      "The powerful analytic tools have helped us streamline our processes and make data-driven decisions that positively impact our efficiency. Tailcast has been a game-changer for our business. The platform is easy to use, and the insights we've gained have driven significant improvements.",
-    image: testimonial3,
+    customerName: "John Chen",
+    customerTitle: "Lease Operator",
+    content: "LettersIQ has revolutionized the way we approach compliance. The proactive severance prevention features have saved us time, money, and headaches. The platform's ease of use and exceptional customer support have made it an essential part of our daily operations. We couldn't be happier with the results.",
   },
 ];
 
@@ -43,23 +33,24 @@ export const Testimonials = () => (
           Testimonials
         </div>
         <div className="custom-block-big-title text-center mb-16 px-8 sm:px-24 md:px-48">
-          People like you love Tailcast
+          What Our Customers Say About LettersIQ
         </div>
-
         <div className="flex flex-col lg:flex-row gap-8 lg:gap-5 xl:gap-10 px-6 xl:px-0 items-center">
           {testimonialsData.map((testimonial, index) => (
             <div
-              className="w-11/12 sm:w-4/5 md:w-[560px] lg:w-1/3 custom-border-gray-darker rounded-xl bg-customDarkBg3 flex flex-col px-6 py-4"
+              className="w-11/12 sm:w-4/5 md:w-[560px] lg:w-1/3 custom-border-gray-darker rounded-xl bg-customDarkBg3 flex flex-col px-6 py-8"
               key={`${testimonial.customerName}-${index}`}
             >
-              <div className="flex mb-2">
+              <div className="flex mb-4">
                 <QuoteIcon />
               </div>
-              <div className="custom-content-text-white">
+              <div className="custom-content-text-white mb-8">
                 "{testimonial.content}"
               </div>
-              <div className="flex mt-4 mb-2 xl:mt-8 xl:mb-4">
-                <img src={testimonial.image} alt="" width="45px" />
+              <div className="flex items-center">
+                <div className="w-12 h-12 rounded-full bg-customDarkBg2 flex items-center justify-center text-white text-xl font-bold">
+                  {testimonial.customerName.charAt(0)}
+                </div>
                 <div className="flex flex-col ml-4">
                   <div className="custom-content-text-white font-medium">
                     {testimonial.customerName}

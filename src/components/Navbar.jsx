@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 
-import { TailcastLogo } from "../assets/logos/TailcastLogo";
 import { GithubIcon } from "../assets/icons/GithubIcon";
 
 const navbarLinks = [
@@ -12,111 +11,139 @@ const navbarLinks = [
   { label: "FAQ", href: "#FAQ", ariaLabel: "FAQ" },
 ];
 
+const menuVariants = {
+  hidden: { opacity: 0, y: -20 },
+  visible: { opacity: 1, y: 0, transition: { staggerChildren: 0.1 } },
+};
+
+const menuItemVariants = {
+  hidden: { opacity: 0, y: -10 },
+  visible: { opacity: 1, y: 0 },
+};
+
 export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
+  const toggleMenu = () => {
+    setIsOpen(!isOpen);
+  };
+
   return (
     <nav className="w-full h-20 flex flex-col justify-center items-center fixed bg-customDarkBg1 lg:bg-customDarkBgTransparent z-40 lg:backdrop-blur-xl">
-      <div className="2xl:w-[1280px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
+      <div className="container mx-auto px-4 md:px-8 flex justify-between items-center relative">
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.3 }}
-          exit={{ opacity: 0 }}
+          initial={{ opacity: 0, y: -20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.5 }}
         >
           <a className="navbar-link" href="#home" aria-label="Home">
-            <div className="flex justify-start items-center grow basis-0">
-              <div className="text-white mr-2 text-6xl">
-                <TailcastLogo />
-              </div>
-              <div className="text-white font-['Inter'] font-bold text-xl">
-                Tailcast
-              </div>
+            <div className="flex items-center">
+
+              <motion.h1
+                className="text-white font-['Inter'] font-bold text-xl hidden md:block"
+                initial={{ opacity: 0, x: -20 }}
+                animate={{ opacity: 1, x: 0 }}
+                transition={{ delay: 0.2, duration: 0.5 }}
+              >
+                LettersIQ
+              </motion.h1>
             </div>
           </a>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.3 }}
-          exit={{ opacity: 0 }}
+          transition={{ delay: 0.3, duration: 0.5 }}
         >
-          <div className="hidden lg:flex h-full pl-12 pb-2">
+          <div className="hidden lg:flex gap-6">
             {navbarLinks.map(({ href, label, ariaLabel }) => (
-              <a
+              <motion.a
+                key={label}
                 className="navbar-link"
                 href={href}
                 aria-label={ariaLabel}
-                key={label}
+                whileHover={{ scale: 1.1 }}
+                transition={{ duration: 0.2 }}
               >
                 {label}
-              </a>
+              </motion.a>
             ))}
           </div>
         </motion.div>
         <motion.div
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
-          transition={{ duration: 0.3 }}
-          exit={{ opacity: 0 }}
+          transition={{ delay: 0.4, duration: 0.5 }}
         >
-          <div className="grow basis-0 justify-end hidden lg:flex">
+          <div className="hidden lg:flex">
             <a
-              className="text-white custom-border-gray rounded-xl
-           bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-              href="https://github.com/matt765/Tidestream"
+              className="text-white custom-border-gray rounded-xl bg-customDarkBg2 hover:bg-customDarkBg3 border-gray-700 px-6 py-2 text-sm flex items-center"
+              href="https://www.wellheadiq.com"
               target="_blank"
-              aria-label="source code"
+              aria-label="WellheadIQ"
             >
-              <GithubIcon />
-              <span className="pt-px">Source code</span>
+              <GithubIcon className="mr-2" />
+              <span>WellheadIQ</span>
             </a>
           </div>
         </motion.div>
         <div
-          className="lg:hidden flex flex-col  px-2 py-3 border-solid border border-gray-600 rounded-md cursor-pointer hover:bg-customDarkBg2"
-          onClick={() => setIsOpen(!isOpen)}
+          className="lg:hidden cursor-pointer"
+          onClick={toggleMenu}
         >
-          <div className="w-5 h-0.5 bg-gray-500  mb-1"></div>
-          <div className="w-5 h-0.5 bg-gray-500  mb-1"></div>
-          <div className="w-5 h-0.5 bg-gray-500 "></div>
+          <motion.div
+            whileHover={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
+            transition={{ duration: 0.2 }}
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="h-6 w-6 text-white"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d={isOpen ? "M6 18L18 6M6 6l12 12" : "M4 6h16M4 12h16M4 18h16"}
+              />
+            </svg>
+          </motion.div>
         </div>
       </div>
       {/* Mobile navbar */}
       <AnimatePresence>
         {isOpen && (
           <motion.div
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            transition={{ duration: 0.3 }}
-            exit={{ opacity: 0 }}
+            initial="hidden"
+            animate="visible"
+            exit="hidden"
+            variants={menuVariants}
+            className="lg:hidden absolute top-20 left-0 right-0 bg-customDarkBg1 z-50 border-y border-solid border-customDarkBg3 py-6"
           >
-            <div
-              className="flex flex-col mt-16 lg:hidden absolute top-4 left-0  bg-customDarkBg1 z-50 w-full 
-        items-center gap-10 pb-10 border-y border-solid border-customDarkBg3 pt-10
-        "
-            >
-              {navbarLinks.map(({ label, href, ariaLabel }) => (
-                <a
-                  key={href}
-                  className="navbar-link"
-                  href={href}
-                  onClick={() => setIsOpen(false)}
-                  aria-label={ariaLabel}
-                >
-                  {label}
-                </a>
-              ))}
-              <a
-                className="text-white custom-border-gray rounded-xl
-           bg-customDarkBg2 hover:bg-customDarkBg3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
-                href="https://github.com/matt765/Tidestream"
-                target="_blank"
+            {navbarLinks.map(({ label, href, ariaLabel }) => (
+              <motion.a
+                key={href}
+                className="navbar-link block text-center py-4"
+                href={href}
+                onClick={toggleMenu}
+                aria-label={ariaLabel}
+                variants={menuItemVariants}
               >
-                <GithubIcon />
-                Source code
-              </a>
-            </div>
+                {label}
+              </motion.a>
+            ))}
+            <motion.a
+              className="text-white custom-border-gray rounded-xl bg-customDarkBg2 hover:bg-customDarkBg3 border-gray-700 px-6 py-2 text-sm flex items-center justify-center mt-6"
+              href="https://www.wellheadiq.com"
+              target="_blank"
+              variants={menuItemVariants}
+            >
+              <GithubIcon className="mr-2" />
+              <span>WellheadIQ</span>
+            </motion.a>
           </motion.div>
         )}
       </AnimatePresence>
