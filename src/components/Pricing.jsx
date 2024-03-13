@@ -7,7 +7,7 @@ import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 const pricingData = [
   "Daily report delivered to your inbox",
   "Remarks and contents of every violation",
-  "No more waiting on mailman"
+  "No more waiting on the mailman"
 ];
 
 export const Pricing = () => {
