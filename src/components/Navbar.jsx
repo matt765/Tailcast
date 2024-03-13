@@ -1,6 +1,6 @@
+import React from 'react';
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import wellheadiqLogo from "../assets/icons/wellheadiq_logo.png"; // Adjust the path as needed
 
 const navbarLinks = [
   { label: "Home", href: "#home", ariaLabel: "Home" },
@@ -39,7 +39,7 @@ export const Navbar = () => {
           <a className="navbar-link" href="#home" aria-label="Home">
             <div className="flex items-center">
               <motion.h1
-                className="text-white font-['Inter'] font-bold text-xl"
+                className="text-white font-bold text-xl"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
@@ -69,15 +69,6 @@ export const Navbar = () => {
               </motion.a>
             ))}
           </div>
-        </motion.div>
-        <motion.div
-          initial={{ opacity: 0, x: 20 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ delay: 0.4, duration: 0.5 }}
-        >
-          <a href="https://www.wellheadiq.com" target="_blank" rel="noopener noreferrer">
-            <img src={wellheadiqLogo} alt="WellheadIQ" className="h-8" />
-          </a>
         </motion.div>
         <div className="lg:hidden cursor-pointer" onClick={toggleMenu}>
           {/* Menu icon */}
