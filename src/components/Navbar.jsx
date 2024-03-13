@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-
-import { GithubIcon } from "../assets/icons/GithubIcon";
+import wellheadiqLogo from "../assets/icons/wellheadiq_logo.png"; // Adjust the path as needed
 
 const navbarLinks = [
   { label: "Home", href: "#home", ariaLabel: "Home" },
@@ -9,6 +8,7 @@ const navbarLinks = [
   { label: "Pricing", href: "#pricing", ariaLabel: "Pricing" },
   { label: "Feedback", href: "#feedback", ariaLabel: "Feedback" },
   { label: "FAQ", href: "#FAQ", ariaLabel: "FAQ" },
+  { label: "Contact Us", href: "#contact-us", ariaLabel: "Contact Us" },
 ];
 
 const menuVariants = {
@@ -38,9 +38,8 @@ export const Navbar = () => {
         >
           <a className="navbar-link" href="#home" aria-label="Home">
             <div className="flex items-center">
-
               <motion.h1
-                className="text-white font-['Inter'] font-bold text-xl hidden md:block"
+                className="text-white font-['Inter'] font-bold text-xl"
                 initial={{ opacity: 0, x: -20 }}
                 animate={{ opacity: 1, x: 0 }}
                 transition={{ delay: 0.2, duration: 0.5 }}
@@ -54,8 +53,9 @@ export const Navbar = () => {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 0.3, duration: 0.5 }}
+          className="hidden lg:flex justify-center flex-grow"
         >
-          <div className="hidden lg:flex gap-6">
+          <div className="flex gap-6">
             {navbarLinks.map(({ href, label, ariaLabel }) => (
               <motion.a
                 key={label}
@@ -71,26 +71,16 @@ export const Navbar = () => {
           </div>
         </motion.div>
         <motion.div
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
+          initial={{ opacity: 0, x: 20 }}
+          animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.4, duration: 0.5 }}
         >
-          <div className="hidden lg:flex">
-            <a
-              className="text-white custom-border-gray rounded-xl bg-customDarkBg2 hover:bg-customDarkBg3 border-gray-700 px-6 py-2 text-sm flex items-center"
-              href="https://www.wellheadiq.com"
-              target="_blank"
-              aria-label="WellheadIQ"
-            >
-              <GithubIcon className="mr-2" />
-              <span>WellheadIQ</span>
-            </a>
-          </div>
+          <a href="https://www.wellheadiq.com" target="_blank" rel="noopener noreferrer">
+            <img src={wellheadiqLogo} alt="WellheadIQ" className="h-8" />
+          </a>
         </motion.div>
-        <div
-          className="lg:hidden cursor-pointer"
-          onClick={toggleMenu}
-        >
+        <div className="lg:hidden cursor-pointer" onClick={toggleMenu}>
+          {/* Menu icon */}
           <motion.div
             whileHover={{ scale: 1.1 }}
             whileTap={{ scale: 0.9 }}
@@ -135,15 +125,6 @@ export const Navbar = () => {
                 {label}
               </motion.a>
             ))}
-            <motion.a
-              className="text-white custom-border-gray rounded-xl bg-customDarkBg2 hover:bg-customDarkBg3 border-gray-700 px-6 py-2 text-sm flex items-center justify-center mt-6"
-              href="https://www.wellheadiq.com"
-              target="_blank"
-              variants={menuItemVariants}
-            >
-              <GithubIcon className="mr-2" />
-              <span>WellheadIQ</span>
-            </motion.a>
           </motion.div>
         )}
       </AnimatePresence>

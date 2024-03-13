@@ -1,10 +1,14 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
-import { InvitationModal } from "./InvitationModal";
 import featuresdiagonal from "../assets/images/featuresdiagonal.jpg";
 
 export const FeaturesDiagonal = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  // Function to scroll to the Contact Us section
+  const scrollToContactUs = () => {
+    const contactUsSection = document.getElementById("contact-us");
+    if (contactUsSection) {
+      contactUsSection.scrollIntoView({ behavior: "smooth" });
+    }
+  };
 
   return (
     <section className="lg:mb-16 w-full flex flex-col justify-center items-center bg-customDarkBg1">
@@ -34,17 +38,17 @@ export const FeaturesDiagonal = () => {
               Proactive Compliance Management
             </span>
             <h2 className="mt-10 mb-8 text-4xl lg:text-5xl custom-block-big-title">
-              Build & Stay Ahead of Regulatory Challenges
+              Stay Ahead of Regulatory Challenges
             </h2>
             <p className="mb-16 text-customGrayText leading-loose">
               Our service empowers you with real-time alerts on potential
               compliance issues, ensuring you can address and resolve them
               promptly. Avoid well severance and maintain uninterrupted
-              operations with our advanced notification system.
+              operations with our notification system.
             </p>
             <div
               className="w-[210px] h-12 custom-button-colored mr-10 cursor-pointer"
-              onClick={() => setIsModalOpen(true)}
+              onClick={scrollToContactUs}
             >
               Get Started
             </div>
@@ -76,9 +80,6 @@ export const FeaturesDiagonal = () => {
           ></path>
         </svg>
       </div>
-      {isModalOpen && (
-        <InvitationModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
-      )}
     </section>
   );
 };

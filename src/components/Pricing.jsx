@@ -1,7 +1,5 @@
 import React from 'react';
-import { useState } from "react";
 import { motion } from "framer-motion";
-import { InvitationModal } from "./InvitationModal";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
 const pricingData = [
@@ -11,7 +9,19 @@ const pricingData = [
 ];
 
 export const Pricing = () => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
+  // Animation variants for the feature list items
+  const listItemVariants = {
+    hidden: { x: -10, opacity: 0 },
+    visible: { x: 0, opacity: 1 }
+  };
+
+  // Hover animation for the "Get Started" button
+  const buttonHoverVariants = {
+    hover: {
+      scale: 1.05,
+      transition: { type: 'spring', stiffness: 300 }
+    }
+  };
 
   return (
     <section id="pricing" className="w-screen flex justify-center bg-customDarkBg2 relative">
@@ -31,34 +41,41 @@ export const Pricing = () => {
               <span className="price-highlight">$4 per lease per month</span>
             </p>
             <p className="mt-4 text-customGrayText">
-            No hidden fees, no annual commitment.
+              No hidden fees, no annual commitment.
             </p>
           </div>
           <div className="flex flex-wrap justify-center mt-10">
             <div className="w-full sm:w-[450px] px-4">
               <div className="p-8 bg-customDarkBg3 rounded-3xl">
-                <ul className="mb-6 text-white">
+                <motion.ul className="mb-6 text-white">
                   {pricingData.map((text, index) => (
-                    <li className="mb-4 flex" key={index}>
+                    <motion.li
+                      className="mb-4 flex items-center"
+                      key={index}
+                      variants={listItemVariants}
+                      initial="hidden"
+                      whileInView="visible"
+                      viewport={{ once: true }}
+                      transition={{ delay: index * 0.1 }}
+                    >
                       <CheckArrowIcon />
                       <span>{text}</span>
-                    </li>
+                    </motion.li>
                   ))}
-                </ul>
-                <div
+                </motion.ul>
+                <motion.a
+                  href="#contact-us"
                   className="inline-block text-center py-2 px-4 w-full rounded-xl custom-button-colored font-bold leading-loose mt-8 cursor-pointer"
-                  onClick={() => setIsModalOpen(true)}
+                  variants={buttonHoverVariants}
+                  whileHover="hover"
                 >
                   Get Started
-                </div>
+                </motion.a>
               </div>
             </div>
           </div>
         </motion.div>
       </div>
-      {isModalOpen && (
-        <InvitationModal isOpen={isModalOpen} setIsOpen={setIsModalOpen} />
-      )}
       <style jsx>{`
         .price-highlight {
           background-color: #ffcc00;
