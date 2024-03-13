@@ -18,7 +18,7 @@ export const Hero = () => {
           transition={{ duration: 0.5 }}
         >
           <div className="text-customSecondary text-sm sm:text-base mb-6 sm:mt-32 mt-16 font-bold">
-            Simplify Your Life as a Texas Oil and Gas Operator
+            Simplify Your Life As A Texas Oil and Gas Operator
           </div>
         </motion.div>
         <motion.div
