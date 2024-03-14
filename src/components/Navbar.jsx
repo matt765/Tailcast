@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import LettersIQLogo from "../assets/icons/LettersIQLogo.png";
+import LettersIQLogo from "../assets/icons/lettersiqlogo.png";
 
 const navbarLinks = [
   { label: "Home", href: "#home", ariaLabel: "Home" },
