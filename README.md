@@ -1,6 +1,6 @@
-# Tailcast
+# LettersIQ
 
-Dark themed website template built on AstroJS, designed for technological startup business.
+Beating the RRC to delivering mail
 
 ## Tech stack:
 
