@@ -24,10 +24,10 @@ export const Testimonials = () => (
     <div className="absolute -top-16" id="feedback" />
     <div className="flex flex-col w-full lg:w-[1150px] justify-center">
       <motion.div
-        initial={{ opacity: 0 }}
-        whileInView={{ opacity: 1 }}
+        initial={{ opacity: 0, y: 50 }}
+        whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
-        transition={{ duration: 0.4, delay: 0.3 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
       >
         <div className="custom-block-subtitle text-center mb-6">
           Testimonials
@@ -35,14 +35,18 @@ export const Testimonials = () => (
         <div className="custom-block-big-title text-center mb-16 px-8 sm:px-24 md:px-48">
           What Our Customers Say About LettersIQ
         </div>
-        <div className="flex flex-col lg:flex-row gap-8 lg:gap-5 xl:gap-10 px-6 xl:px-0 items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-5 xl:gap-10 px-6 xl:px-0">
           {testimonialsData.map((testimonial, index) => (
-            <div
-              className="w-11/12 sm:w-4/5 md:w-[560px] lg:w-1/3 custom-border-gray-darker rounded-xl bg-customDarkBg3 flex flex-col px-6 py-8"
+            <motion.div
               key={`${testimonial.customerName}-${index}`}
+              className="w-full custom-border-gray-darker rounded-xl bg-customDarkBg3 flex flex-col p-8"
+              initial={{ opacity: 0, scale: 0.9 }}
+              whileInView={{ opacity: 1, scale: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.3, delay: index * 0.1 }}
             >
               <div className="flex mb-4">
-                <QuoteIcon />
+                <QuoteIcon className="text-customSecondary" />
               </div>
               <div className="custom-content-text-white mb-8">
                 "{testimonial.content}"
@@ -60,7 +64,7 @@ export const Testimonials = () => (
                   </div>
                 </div>
               </div>
-            </div>
+            </motion.div>
           ))}
         </div>
       </motion.div>
