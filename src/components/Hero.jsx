@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
 import dashboard from "../assets/images/dashboard.jpg";
+import React from 'react';
 
 export const Hero = () => {
-
-  // Function to scroll to the Contact Us section
   const scrollToContactUs = () => {
     const contactUsSection = document.getElementById("contact-us");
     if (contactUsSection) {
