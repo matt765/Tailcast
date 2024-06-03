@@ -28,7 +28,7 @@ const footerData = [
 export const Footer = () => {
   return (
     <footer>
-      <div className="pt-10  lg:pt-20 lg:pb-12 bg-customDarkBg1 radius-for-skewed ">
+      <div className="pt-10  lg:pt-20 lg:pb-16 bg-customDarkBg1 radius-for-skewed ">
         <div className="container mx-auto px-4 w-4/5 md:w-11/12 lg:w-10/12 xl:w-4/5 2xl:w-2/3">
           <div className="flex flex-wrap">
             <div className="w-full lg:w-1/3 mb-16 lg:mb-0">
@@ -77,8 +77,8 @@ export const Footer = () => {
               <div className="w-full md:w-1/3 lg:w-auto mb-16 md:mb-0">
                 <h3 className="mb-6 text-2xl font-bold text-white">Products</h3>
                 <ul>
-                  {footerData[0].items.map((item, i) => (
-                    <li key={i} className="mb-4">
+                  {footerData[0].items.map((item, index) => (
+                    <li key={`${item}-${index}`} className="mb-4">
                       <a
                         className="text-gray-400 hover:text-gray-300"
                         href="#"
@@ -95,8 +95,8 @@ export const Footer = () => {
                   Important Links
                 </h3>
                 <ul>
-                  {footerData[1].items.map((item, i) => (
-                    <li key={i} className="mb-4">
+                  {footerData[1].items.map((item, index) => (
+                    <li key={`${item}-${index}`} className="mb-4">
                       <a
                         className="text-gray-400 hover:text-gray-300"
                         href="#"
@@ -111,8 +111,8 @@ export const Footer = () => {
               <div className="w-full md:w-1/3 lg:w-auto">
                 <h3 className="mb-6 text-2xl font-bold text-white">Company</h3>
                 <ul>
-                  {footerData[2].items.map((item, i) => (
-                    <li key={i} className="mb-4">
+                  {footerData[2].items.map((item, index) => (
+                    <li key={`${item}-${index}`} className="mb-4">
                       <a
                         className="text-gray-400 hover:text-gray-300"
                         href="#"
@@ -125,10 +125,7 @@ export const Footer = () => {
                 </ul>
               </div>
             </div>
-          </div>
-          <p className="lg:text-center text-sm text-gray-400 border-t border-[rgb(255,255,255,0.2)] pt-12 mt-16 hidden lg:block">
-            &copy; 2022. MIT license.
-          </p>
+          </div>          
         </div>
       </div>
     </footer>

@@ -58,7 +58,7 @@ export const Pricing = () => {
                   >
                     Monthly
                   </div>
-                  <div className={isMonthly && "text-gray-400"}>Yearly</div>
+                  <div className={isMonthly ? "text-gray-400" : ""}>Yearly</div>
                 </div>
               </label>
             </div>
@@ -76,7 +76,6 @@ export const Pricing = () => {
                       {isMonthly ? "/ month" : "/ year"}
                     </div>
                   </div>
-
                   <p className="mt-4 mb-6 2xl:mb-10 text-gray-500 leading-loose text-left">
                     The perfect way to get started and get used to our tools.
                   </p>

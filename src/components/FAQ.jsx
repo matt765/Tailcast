@@ -43,7 +43,7 @@ export const FAQ = () => (
           </h2>
           <div className="mb-11 flex flex-wrap -m-1">
             {FAQData.map((item, index) => (
-              <div className="w-full p-1">
+              <div className="w-full p-1" key={`${item.question}-${index}`}>
                 <FAQBox
                   title={item.question}
                   content={item.answer}
@@ -72,7 +72,7 @@ const FAQBox = ({ defaultOpen, title, content }) => {
           {title}
         </h3>
         <p
-          className={`text-customGrayText pt-4 transition-all duration-300 overflow-hidden ${
+          className={`text-customGrayText pt-4 transition-all duration-200 overflow-hidden ${
             isOpen ? "max-h-96" : "max-h-0"
           }`}
         >
