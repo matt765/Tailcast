@@ -1,7 +1,14 @@
 {
-  "name": "@example/basics",
+  "name": "tailcast",
   "type": "module",
-  "version": "0.0.1",
+  "version": "1.0.0",
+  "license": "MIT",
+  "description": "Dark themed website template built on AstroJS, designed for fictional startup",
+  "author": {
+    "name": "Mateusz Wyrębek (matt765)",
+    "email": "mateusz.wyrebek@gmail.com",
+    "url": "https://matt765-portfolio.vercel.app/"
+  },
   "private": true,
   "scripts": {
     "dev": "astro dev",

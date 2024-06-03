@@ -1,6 +1,6 @@
 # Tailcast
 
-Dark themed website template built on AstroJS, designed for technological startup business.
+Dark themed website template built on AstroJS, designed for fictional startup
 
 ## Tech stack:
 
@@ -21,7 +21,7 @@ Astro, React, Tailwind, Framer Motion
 │   │   └── logos
 │   ├── components
 │   ├── layouts
-│   ├──  pages
+│   ├── pages
 │   └── styles
 └── package.json
 ```
