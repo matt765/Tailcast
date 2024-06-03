@@ -59,7 +59,7 @@ export const Testimonials = () => (
                 "{testimonial.content}"
               </div>
               <div className="flex mt-4 mb-2 xl:mt-8 xl:mb-4">
-                <img src={testimonial.image} alt="" width="45px" />
+                <img src={testimonial.image.src} alt="" width="45px" />
                 <div className="flex flex-col ml-4">
                   <div className="custom-content-text-white font-medium">
                     {testimonial.customerName}

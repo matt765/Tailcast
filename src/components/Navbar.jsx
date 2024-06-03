@@ -24,7 +24,7 @@ export const Navbar = () => {
           transition={{ duration: 0.3 }}
           exit={{ opacity: 0 }}
         >
-          <a className="navbar-link" href="#home" aria-label="Home">
+          <a href="#home" aria-label="Home">
             <div className="flex justify-start items-center grow basis-0">
               <div className="text-white mr-2 text-6xl">
                 <TailcastLogo />
@@ -44,7 +44,7 @@ export const Navbar = () => {
           <div className="hidden lg:flex h-full pl-12 pb-2">
             {navbarLinks.map(({ href, label, ariaLabel }) => (
               <a
-                className="navbar-link"
+                className="text-white lg:text-base text-2xl  leading-6 mr-4 ml-4   2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition h-full pt-2"
                 href={href}
                 aria-label={ariaLabel}
                 key={label}
@@ -99,7 +99,7 @@ export const Navbar = () => {
               {navbarLinks.map(({ label, href, ariaLabel }) => (
                 <a
                   key={href}
-                  className="navbar-link"
+                  className="text-white lg:text-base text-2xl  leading-6 mr-4 ml-4   2xl:mr-6 2xl:ml-6 cursor-pointer font-normal lg:font-medium hover:scale-110 transition duration-300 h-full pt-2"
                   href={href}
                   onClick={() => setIsOpen(false)}
                   aria-label={ariaLabel}

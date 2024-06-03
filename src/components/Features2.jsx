@@ -17,14 +17,14 @@ export const Features2 = () => (
           <div className="mb-8 lg:mb-0 w-full px-2 lg:pl-16 flex flex-col justify-center md:pl-8">
             <div className="mb-4 py-3 md:pl-3 md:pr-20 lg:pr-12 rounded">
               <img
-                src={feature5}
+                src={feature5.src}
                 alt="f1"
                 className="rounded-xl  custom-border-gray"
               />
             </div>
             <div className="py-3 md:pl-20 lg:pl-12 md:pr-2 rounded ">
               <img
-                src={feature6}
+                src={feature6.src}
                 alt="f2"
                 className="rounded-xl  custom-border-gray"
               />

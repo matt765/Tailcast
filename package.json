@@ -18,16 +18,17 @@
     "astro": "astro"
   },
   "dependencies": {
-    "@astrojs/tailwind": "^3.1.1",
-    "@fontsource/inter": "^4.5.15",
-    "astro": "^2.2.0",
-    "framer-motion": "^10.11.2",
-    "npm-check-updates": "^16.10.7",
-    "tailwindcss": "^3.3.1"
+    "@astrojs/tailwind": "^5.1.0",
+    "@fontsource/inter": "^5.0.18",
+    "astro": "^4.9.2",
+    "framer-motion": "^11.2.10",
+    "npm": "^10.8.1",
+    "npm-check-updates": "^16.14.20",
+    "tailwindcss": "^3.4.3"
   },
   "devDependencies": {
-    "@astrojs/react": "^2.1.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0"
+    "@astrojs/react": "^3.4.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
   }
 }
