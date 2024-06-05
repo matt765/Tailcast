@@ -1,38 +1,38 @@
 /* Typography */
 
-.custom-block-title {
+.block-title {
   @apply text-white text-3xl font-bold tracking-normal;
 }
-.custom-block-big-title {
+.block-big-title {
   @apply text-white text-4xl xl:text-5xl font-bold tracking-normal;
 }
-.custom-block-subtitle {
-  @apply text-xs text-customSecondary  tracking-wider font-bold uppercase;
+.block-subtitle {
+  @apply text-xs text-secondaryColor  tracking-wider font-bold uppercase;
 }
-.custom-content-title {
+.content-title {
   @apply text-white text-lg font-bold tracking-normal;
 }
-.custom-content-text-white {
+.content-text-white {
   @apply text-white text-base leading-relaxed;
 }
-.custom-content-text-gray {
+.content-text-gray {
   @apply text-gray-400 text-base;
 }
 
 /* Backgrounds */
 
 .custom-bg-dark1 {
-  @apply bg-customDarkBg1  fill-customDarkBg1;
+  @apply bg-bgDark1  fill-bgDark1;
 }
 .custom-bg-dark2 {
-  @apply bg-customDarkBg2  fill-customDarkBg2;
+  @apply bg-bgDark2  fill-bgDark2;
 }
 .custom-bg-dark3 {
-  @apply bg-customDarkBg3  fill-customDarkBg3;
+  @apply bg-bgDark3  fill-bgDark3;
 }
 body,
 html {
-  @apply bg-customDarkBg2;
+  @apply bg-bgDark2;
 }
 
 /* Borders */
@@ -46,8 +46,8 @@ html {
 
 /* Buttons */
 
-.custom-button-colored {
-  @apply rounded-lg font-bold bg-customPrimary text-white flex justify-center items-center hover:bg-[#7274f3] cursor-pointer transition;
+.contained-button {
+  @apply rounded-lg font-bold bg-primaryColor text-white flex justify-center items-center hover:bg-[#7274f3] cursor-pointer transition;
 }
 
 /* Preventing FOUC */

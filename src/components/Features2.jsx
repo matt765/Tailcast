@@ -5,7 +5,7 @@ import feature6 from "../assets/images/feature6.jpg";
 import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 
 export const Features2 = () => (
-  <section className="w-full bg-customDarkBg2 mt-12 sm:mt-24 mb-12 lg:my-20 pt-4">
+  <section className="w-full bg-bgDark2 mt-12 sm:mt-24 mb-12 lg:my-20 lg:mb-24 pt-4">
     <motion.div
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
@@ -34,10 +34,10 @@ export const Features2 = () => (
 
         <div className="w-full lg:w-1/2 mb-12 lg:mb-0 xl:pl-8">
           <div className="mx-auto lg:mx-auto w-11/12 sm:w-4/5 md:w-3/4 lg:w-unset">
-            <span className="custom-block-subtitle">
+            <span className="block-subtitle">
               Make Data-Driven Decisions
             </span>
-            <h2 className="mt-6 mb-8 text-4xl lg:text-5xl custom-block-big-title">
+            <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
               Issue tracking you’ll enjoy using
             </h2>
             <p className="mb-12 text-customGrayText leading-loose">

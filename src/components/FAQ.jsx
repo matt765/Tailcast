@@ -35,10 +35,10 @@ export const FAQ = () => (
     >
       <div className="relative z-10 container px-2 sm:px-8 lg:px-4 mx-auto w-11/12 sm:w-full">
         <div className="md:max-w-4xl mx-auto">
-          <p className="mb-7 custom-block-subtitle text-center">
+          <p className="mb-7 block-subtitle text-center">
             Have any questions?
           </p>
-          <h2 className="mb-16 custom-block-big-title text-center">
+          <h2 className="mb-16 block-big-title text-center">
             Frequently Asked Questions
           </h2>
           <div className="mb-11 flex flex-wrap -m-1">
@@ -64,11 +64,11 @@ const FAQBox = ({ defaultOpen, title, content }) => {
 
   return (
     <div
-      className="pt-2 sm:pt-6 pb-2 px-3 sm:px-8  rounded-3xl bg-customDarkBg3 custom-border-gray-darker mb-4 relative hover:bg-customDarkBg3Hover cursor-pointer"
+      className="pt-2 sm:pt-6 pb-2 px-3 sm:px-8  rounded-3xl bg-bgDark3 custom-border-gray-darker mb-4 relative hover:bg-bgDark3Hover cursor-pointer"
       onClick={() => setIsOpen(!isOpen)}
     >
       <div className="flex flex-col p-2  justify-center items-start">
-        <h3 className=" custom-content-title pt-3 sm:pt-0 pr-8 sm:pr-0">
+        <h3 className=" content-title pt-3 sm:pt-0 pr-8 sm:pr-0">
           {title}
         </h3>
         <p
