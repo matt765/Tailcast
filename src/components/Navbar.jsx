@@ -16,7 +16,10 @@ export const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="w-full h-20 flex flex-col justify-center items-center fixed bg-bgDark1 lg:bg-bgDarkTransparent z-40 lg:backdrop-blur-xl">
+    <nav
+      className="w-full h-20 flex flex-col justify-center items-center fixed bg-bgDark1 lg:bg-bgDarkTransparent z-40 lg:backdrop-blur-xl"
+      aria-label="Main navigation"
+    >
       <div className="2xl:w-[1280px] xl:w-10/12 w-11/12 flex justify-between items-center relative">
         <motion.div
           initial={{ opacity: 0 }}
@@ -62,7 +65,7 @@ export const Navbar = () => {
         >
           <div className="grow basis-0 justify-end hidden lg:flex">
             <a
-              className="text-white custom-border-gray rounded-xl
+              className="text-white main-border-gray rounded-xl
            bg-bgDark2 hover:bg-bgDark3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
               href="https://github.com/matt765/Tidestream"
               target="_blank"
@@ -108,8 +111,7 @@ export const Navbar = () => {
                 </a>
               ))}
               <a
-                className="text-white custom-border-gray rounded-xl
-           bg-bgDark2 hover:bg-bgDark3  border-gray-700 pl-6 pr-8 pt-2 pb-2 text-sm flex"
+                className="outlined-button pl-6 pr-8 pt-2 pb-2  flex"
                 href="https://github.com/matt765/Tidestream"
                 target="_blank"
               >

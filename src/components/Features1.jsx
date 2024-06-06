@@ -9,7 +9,7 @@ import { CheckArrowIcon } from "../assets/icons/CheckArrowIcon";
 export const Features1 = () => {
   return (
     <section
-      className="w-full bg-bgDark2 mt-20 mb-8 sm:mt-16 sm:mb-24 xl:mt-0  xl:m pt-[2rem]  md:pt-[12vw] lg:pt-16"
+      className="w-full bg-bgDark2 pt-24 -mt-8  mb-8 sm:-mt-8 sm:mb-24 xl:-mt-8 2xl:mt-0    md:pt-[12vw] lg:pt-16"
       id="features"
     >
       <motion.div
@@ -25,12 +25,12 @@ export const Features1 = () => {
               <h2 className="mt-6 mb-8 text-4xl lg:text-5xl block-big-title">
                 Unlike any tool you used before
               </h2>
-              <p className="mb-10 text-customGrayText leading-loose">
+              <p className="mb-10 text-secondaryText leading-loose">
                 Discover a new level of data analysis with our innovative and
-                user-friendly platform. Transform your business needs with actionable
-                insights.
+                user-friendly platform. Transform your business needs with
+                actionable insights.
               </p>
-              <ul className="mb-6 text-white">
+              <ul className="mb-6 text-primaryText">
                 <li className="mb-4 flex">
                   <CheckArrowIcon />
                   <span>Real-time data visualization</span>
@@ -51,15 +51,17 @@ export const Features1 = () => {
               <div className="mb-4 py-3 pl-3 pr-2 rounded">
                 <img
                   src={feature1.src}
-                  alt="f1"
-                  className="rounded-xl  custom-border-gray mx-auto sm:mx-unset"
+                  alt="Feature image 1"
+                  className="rounded-xl  main-border-gray mx-auto sm:mx-unset"
+                  aria-label="Feature image 1"
                 />
               </div>
               <div className="py-3 pl-3 pr-2 rounded ">
                 <img
                   src={feature2.src}
-                  alt="f2"
-                  className="rounded-xl  custom-border-gray mx-auto sm:mx-unset"
+                  alt="Feature image 2"
+                  className="rounded-xl  main-border-gray mx-auto sm:mx-unset"
+                  aria-label="Feature image 2"
                 />
               </div>
             </div>
@@ -67,15 +69,17 @@ export const Features1 = () => {
               <div className="mb-4 py-3 pl-3 pr-2 rounded-lg ">
                 <img
                   src={feature3.src}
-                  alt="f3"
-                  className="rounded-xl  custom-border-gray"
+                  alt="Feature image 3"
+                  className="rounded-xl  main-border-gray"
+                  aria-label="Feature image 3"
                 />
               </div>
               <div className="py-3 pl-3 pr-2 rounded-lg ">
                 <img
                   src={feature4.src}
-                  alt="f4"
-                  className="rounded-xl  custom-border-gray"
+                  alt="Feature image 4"
+                  className="rounded-xl  main-border-gray"
+                  aria-label="Feature image 4"
                 />
               </div>
             </div>

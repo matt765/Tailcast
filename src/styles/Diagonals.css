@@ -1,11 +1,11 @@
 /* Hero */
 
-.custom-shape-divider-bottom-1665343298 {
+.shape-divider-bottom-1665343298 {
   width: 100%;
   overflow: hidden;
   line-height: 0;
 }
-.custom-shape-divider-bottom-1665343298 svg {
+.shape-divider-bottom-1665343298 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
@@ -19,13 +19,13 @@
 
 /* Features Top */
 
-.custom-shape-divider-bottom-1665696614 {
+.shape-divider-bottom-1665696614 {
   width: 100%;
   overflow: hidden;
   line-height: 0;
   transform: rotate(180deg);
 }
-.custom-shape-divider-bottom-1665696614 svg {
+.shape-divider-bottom-1665696614 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);
@@ -35,11 +35,11 @@
 
 /* Features Bottom */
 
-.custom-shape-divider-top-1665696661 {
+.shape-divider-top-1665696661 {
   overflow: hidden;
   line-height: 0;
 }
-.custom-shape-divider-top-1665696661 svg {
+.shape-divider-top-1665696661 svg {
   position: relative;
   display: block;
   width: calc(100% + 1.3px);

@@ -1,7 +1,7 @@
 {
   "name": "tailcast",
   "type": "module",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "license": "MIT",
   "description": "Dark themed website template built on AstroJS, designed for fictional startup",
   "author": {

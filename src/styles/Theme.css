@@ -1,53 +1,40 @@
 /* Typography */
 
 .block-title {
-  @apply text-white text-3xl font-bold tracking-normal;
+  @apply text-primaryText text-3xl font-bold tracking-normal;
 }
 .block-big-title {
-  @apply text-white text-4xl xl:text-5xl font-bold tracking-normal;
+  @apply text-primaryText text-4xl xl:text-5xl font-bold tracking-normal;
 }
 .block-subtitle {
   @apply text-xs text-secondaryColor  tracking-wider font-bold uppercase;
 }
 .content-title {
-  @apply text-white text-lg font-bold tracking-normal;
+  @apply text-primaryText text-lg font-bold tracking-normal;
 }
 .content-text-white {
-  @apply text-white text-base leading-relaxed;
+  @apply text-primaryText text-base leading-relaxed;
 }
 .content-text-gray {
   @apply text-gray-400 text-base;
 }
 
-/* Backgrounds */
-
-.custom-bg-dark1 {
-  @apply bg-bgDark1  fill-bgDark1;
-}
-.custom-bg-dark2 {
-  @apply bg-bgDark2  fill-bgDark2;
-}
-.custom-bg-dark3 {
-  @apply bg-bgDark3  fill-bgDark3;
-}
-body,
-html {
-  @apply bg-bgDark2;
-}
-
 /* Borders */
 
-.custom-border-gray {
-  @apply border border-solid border-[rgb(255,255,255,0.15)];
+.main-border-gray {
+  @apply border border-solid border-mainBorder;
 }
-.custom-border-gray-darker {
-  @apply border border-solid border-[rgb(255,255,255,0.07)];
+.main-border-gray-darker {
+  @apply border border-solid border-mainBorderDarker;
 }
 
 /* Buttons */
 
 .contained-button {
-  @apply rounded-lg font-bold bg-primaryColor text-white flex justify-center items-center hover:bg-[#7274f3] cursor-pointer transition;
+  @apply rounded-lg font-bold bg-primaryColor text-primaryText flex justify-center items-center hover:bg-[#7274f3] cursor-pointer transition;
+}
+.outlined-button {
+  @apply text-primaryText main-border-gray rounded-xl bg-bgDark2 hover:bg-bgDark3  border-gray-700 text-sm;
 }
 
 /* Preventing FOUC */

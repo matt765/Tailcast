@@ -12,3 +12,11 @@
 - add contributing guidelines
 - fix console errors
 - hide feature divider
+
+## 1.0.2 (05-06-2024)
+
+- add blog section and article page
+- optimize theme class names
+- fix visual bugs
+- improve hover states on buttons
+- improve accessibility

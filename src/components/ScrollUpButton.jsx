@@ -26,9 +26,10 @@ export const ScrollUpButton = () => {
   return (
     <>
       {isVisible && (
-        <div
-          className="w-12 h-12 fixed bottom-6 right-6 custom-border-gray rounded-xl  bg-bgDark2 hover:bg-bgDark3 cursor-pointer flex justify-center items-center transition z-50"
+        <button
+          className="w-12 h-12 fixed bottom-6 right-6 main-border-gray rounded-xl  bg-bgDark2 hover:bg-bgDark3 cursor-pointer flex justify-center items-center transition z-50"
           onClick={scrollToTop}
+          aria-label="Scroll to top"
         >
           <svg
             fill="none"
@@ -45,7 +46,7 @@ export const ScrollUpButton = () => {
               strokeLinejoin="round"
             ></path>
           </svg>
-        </div>
+        </button>
       )}
     </>
   );
