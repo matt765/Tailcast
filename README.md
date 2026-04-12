@@ -1,19 +1,23 @@
-# Tailcast
+<div align="center">
+
+<div id="user-content-toc">
+  <ul align="center" style="list-style: none;">
+    <summary><h1>Tailcast</h1></summary>
+  </ul>
+</div>
 
 **Dark-themed website template built with Astro 6 & Tailwind CSS, designed for a fictional startup.**<br>
 Responsive, fast, and ready to customize.
 
 [Live Demo](https://tailcast.vercel.app) · [Getting Started](#quickstart) · [Changelog](https://github.com/matt765/Tailcast/blob/main/CHANGELOG.md)
 
-<img src="https://img.shields.io/github/forks/matt765/Tailcast?style=flat" alt="Forks"> <img src="https://img.shields.io/github/package-json/v/matt765/Tailcast?color=green" alt="Version">
+[![Forks](https://img.shields.io/github/forks/matt765/Tailcast?style=flat)](https://github.com/matt765/Tailcast/forks) [![Version](https://img.shields.io/github/package-json/v/matt765/Tailcast?color=green)](https://github.com/matt765/Tailcast/releases)
+
+</div>
 
 ## Tech stack
 
 Astro 6, TypeScript, Tailwind CSS 4, ESLint, Prettier
-
-## Preview
-
-![Tailcast preview](https://github.com/user-attachments/assets/0bb55d93-227b-4f7a-b8bc-ddce5d54db15)
 
 ## Features
 
@@ -23,6 +27,12 @@ Astro 6, TypeScript, Tailwind CSS 4, ESLint, Prettier
 - **View Transitions** - Smooth page navigation with Astro Client Router, no full-page reloads
 - **Responsive** - Mobile-first design that adapts to any screen size
 - **Code quality** - ESLint, Prettier and CI pipeline pre-configured with Astro and Tailwind plugins
+
+## Preview
+
+<div align="center">
+<img src="https://github.com/user-attachments/assets/346a7576-472e-4ec4-9576-6e39796dd554" alt="Tailcast preview" width="720">
+</div>
 
 ## Quickstart
 

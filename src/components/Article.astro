@@ -31,20 +31,25 @@ const { title, subtitle, date, image, author, readTime, tags } = articleData;
     <header class="mx-auto mb-12 max-w-4xl text-center">
       {
         tags && (
-          <div class="mb-6 flex justify-center gap-2">
-            {tags.map((tag: string) => (
-              <span class="badge-primary font-bold tracking-wider text-[#d4d5fa] uppercase">
+          <div class="mb-6 flex items-center justify-center gap-2">
+            {tags.map((tag: string, index: number) => (
+              <span
+                class:list={[
+                  'badge-primary whitespace-nowrap font-bold tracking-wider text-[#d4d5fa] uppercase',
+                  index >= 2 && 'hidden sm:inline-flex',
+                ]}
+              >
                 {tag}
               </span>
             ))}
           </div>
         )
       }
-      <h1 class="text-primaryText mb-6 text-4xl leading-tight font-bold sm:text-5xl lg:text-6xl">
+      <h1 class="text-primaryText mb-6 text-3xl leading-tight font-bold sm:text-5xl lg:text-6xl">
         {title}
       </h1>
       <p class="text-secondaryText mb-8 text-lg">{subtitle}</p>
-      <div class="text-secondaryText flex items-center justify-center gap-4 text-sm">
+      <div class="text-secondaryText flex flex-col items-center justify-center gap-4 text-sm min-[560px]:flex-row">
         {
           author && (
             <div class="flex items-center gap-3">
@@ -71,16 +76,18 @@ const { title, subtitle, date, image, author, readTime, tags } = articleData;
             </div>
           )
         }
-        {author && <div class="bg-mainBorder h-8 w-px" />}
-        <div>{date}</div>
-        {
-          readTime && (
-            <>
-              <div class="bg-secondaryText h-1 w-1 rounded-full" />
-              <div>{readTime}</div>
-            </>
-          )
-        }
+        {author && <div class="bg-mainBorder hidden h-8 w-px min-[560px]:block" />}
+        <div class="flex items-center gap-4">
+          <div>{date}</div>
+          {
+            readTime && (
+              <>
+                <div class="bg-secondaryText h-1 w-1 rounded-full" />
+                <div>{readTime}</div>
+              </>
+            )
+          }
+        </div>
       </div>
     </header>
 

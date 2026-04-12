@@ -271,7 +271,7 @@ const testimonials = [
           {
             serviceCategories.map((cat, i) => (
               <button
-                class={`tab-button cursor-pointer rounded-xl px-4 py-2.5 text-sm font-medium transition-all duration-300 ${i === 0 ? 'bg-bgDark3 text-primaryText' : 'bg-bgDark1/80 text-secondaryText hover:text-primaryText border-mainBorderFaintest border'}`}
+                class={`tab-button cursor-pointer rounded-xl border px-4 py-2.5 text-sm font-medium transition-colors duration-300 ${i === 0 ? 'bg-bgDark3 text-primaryText border-transparent' : 'bg-bgDark1/80 text-secondaryText hover:text-primaryText border-mainBorderFaintest'}`}
                 role="tab"
                 aria-selected={i === 0 ? 'true' : 'false'}
                 aria-controls={`service-panel-${cat.id}`}
@@ -338,7 +338,7 @@ const testimonials = [
                     ))}
                   </ul>
                 </div>
-                <div class="lg:w-1/2">
+                <div class="mt-6 lg:mt-0 lg:w-1/2">
                   <div class="bg-bgDark1Lighter flex aspect-[4/3] items-center justify-center rounded-3xl p-12 lg:p-16">
                     <svg
                       class="text-secondaryColor/15 h-32 w-32"
@@ -359,7 +359,7 @@ const testimonials = [
   </section>
 
   <!-- 2. How it works -->
-  <section class="py-24">
+  <section class="py-12 lg:py-24">
     <div class="content-container">
       <div class="fade-in">
         <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
@@ -401,17 +401,17 @@ const testimonials = [
           <table class="w-full text-sm">
             <thead>
               <tr class="border-mainBorderDarker border-b">
-                <th class="text-secondaryText w-1/2 p-5 text-left font-medium lg:p-6">Feature</th>
-                <th class="p-5 text-center lg:p-6">
+                <th class="text-secondaryText w-1/2 p-3 text-left font-medium sm:p-5 lg:p-6">Feature</th>
+                <th class="p-3 text-center sm:p-5 lg:p-6">
                   <span class="text-secondaryColor text-base font-bold">Tailcast</span>
                 </th>
-                <th class="p-5 text-center lg:p-6">
+                <th class="p-3 text-center sm:p-5 lg:p-6">
                   <span class="text-secondaryText font-medium">Datawise</span>
                 </th>
-                <th class="hidden p-5 text-center sm:table-cell lg:p-6">
+                <th class="hidden p-3 text-center sm:table-cell sm:p-5 lg:p-6">
                   <span class="text-secondaryText font-medium">Metrifly</span>
                 </th>
-                <th class="hidden p-5 text-center md:table-cell lg:p-6">
+                <th class="hidden p-3 text-center md:table-cell sm:p-5 lg:p-6">
                   <span class="text-secondaryText font-medium">Chartbolt</span>
                 </th>
               </tr>
@@ -424,13 +424,13 @@ const testimonials = [
                       i < comparisonFeatures.length - 1 ? 'border-mainBorderFaintest border-b' : ''
                     }
                   >
-                    <td class="p-5 lg:p-6">
+                    <td class="p-3 sm:p-5 lg:p-6">
                       <div class="text-primaryText text-[0.95rem] font-medium">{f.name}</div>
                       <div class="text-secondaryText mt-0.5 hidden text-sm lg:block">
                         {f.description}
                       </div>
                     </td>
-                    <td class="bg-secondaryColor/[0.03] p-5 text-center lg:p-6">
+                    <td class="bg-secondaryColor/[0.03] p-3 text-center sm:p-5 lg:p-6">
                       <div class="flex justify-center">
                         <div class="bg-secondaryColor/15 flex h-7 w-7 items-center justify-center rounded-lg">
                           <svg
@@ -447,7 +447,7 @@ const testimonials = [
                         </div>
                       </div>
                     </td>
-                    <td class="p-5 text-center lg:p-6">
+                    <td class="p-3 text-center sm:p-5 lg:p-6">
                       <div class="flex justify-center">
                         {f.mixpanel ? (
                           <>
@@ -480,7 +480,7 @@ const testimonials = [
                         )}
                       </div>
                     </td>
-                    <td class="hidden p-5 text-center sm:table-cell lg:p-6">
+                    <td class="hidden p-3 text-center sm:table-cell sm:p-5 lg:p-6">
                       <div class="flex justify-center">
                         {f.amplitude ? (
                           <>
@@ -513,7 +513,7 @@ const testimonials = [
                         )}
                       </div>
                     </td>
-                    <td class="hidden p-5 text-center md:table-cell lg:p-6">
+                    <td class="hidden p-3 text-center md:table-cell sm:p-5 lg:p-6">
                       <div class="flex justify-center">
                         {f.ga4 ? (
                           <>
@@ -645,14 +645,22 @@ const testimonials = [
         const tabId = btn.getAttribute('data-tab');
 
         document.querySelectorAll('.tab-button').forEach((b) => {
-          b.classList.remove('bg-bgDark3', 'text-primaryText', 'shadow-lg', 'shadow-black/20');
+          const isMobile = b.closest('.sm\\:hidden') !== null;
+          b.classList.remove('bg-bgDark3', 'text-primaryText', 'shadow-lg', 'shadow-black/20', 'border-transparent');
           b.classList.add('text-secondaryText');
+          if (isMobile) {
+            b.classList.add('bg-bgDark1/80', 'border-mainBorderFaintest');
+          }
           b.setAttribute('aria-selected', 'false');
           b.querySelector('.tab-icon')?.classList.remove('text-secondaryColor');
           b.querySelector('.tab-icon')?.classList.add('text-secondaryText/50');
         });
-        btn.classList.remove('text-secondaryText');
+        const isMobileBtn = btn.closest('.sm\\:hidden') !== null;
+        btn.classList.remove('text-secondaryText', 'bg-bgDark1/80', 'border-mainBorderFaintest');
         btn.classList.add('bg-bgDark3', 'text-primaryText', 'shadow-lg', 'shadow-black/20');
+        if (isMobileBtn) {
+          btn.classList.add('border-transparent');
+        }
         btn.setAttribute('aria-selected', 'true');
         btn.querySelector('.tab-icon')?.classList.remove('text-secondaryText/50');
         btn.querySelector('.tab-icon')?.classList.add('text-secondaryColor');
